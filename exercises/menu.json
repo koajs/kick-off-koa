@@ -3,5 +3,6 @@
     "ROUTING",
     "REQUEST_BODY",
     "RESPONSE_BODY",
-    "MIDDLEWARE"
+    "MIDDLEWARE",
+    "ERROR_HANDLING"
 ]
