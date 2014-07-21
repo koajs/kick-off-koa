@@ -5,6 +5,7 @@ var execute = require('workshopper-exercise/execute');
 var comparestdout = require('workshopper-exercise/comparestdout');
 var urllib = require('urllib');
 var pedding = require('pedding');
+var fmt = require('util').format;
 
 var argv = [];
 exports.argv = function () {
@@ -42,7 +43,7 @@ function query(mode) {
   // query submisstion server
   var submissionUrl = 'http://localhost:' + exercise.submissionPort + task[0];
   urllib.request(submissionUrl, task[1], function (err, data, res) {
-    if (err) return error(err);
+    if (err) return error(err, 'submission');
 
     var verify = task[2];
     verify(data, res, exercise.submissionStdout);
@@ -53,7 +54,7 @@ function query(mode) {
     // query solution server
     var solutionUrl = 'http://localhost:' + exercise.solutionPort + task[0];
     urllib.request(solutionUrl, task[1], function (err, data, res) {
-      if (err) return error(err);
+      if (err) return error(err, 'solution');
 
       var verify = task[2];
       verify(data, res, exercise.solutionStdout);
@@ -61,8 +62,14 @@ function query(mode) {
     });
   }
 
-  function error (err) {
-    exercise.emit('fail', 'Error connecting to ' + task[0] + ' : ' + err.code);
+  function error (err, type) {
+    var port = type === 'solution'
+      ? exercise.solutionPort
+      : exercise.submissionPort;
+
+    var msg = fmt('Error connecting to %s server(http://localhost:%s%s), options: %j. %s',
+      type, port, task[0], task[1], err.stack);
+    exercise.emit('fail', msg);
   };
 }
 
@@ -95,9 +102,9 @@ exports.generate = function () {
     this.submissionStdout.pipe(process.stdout);
     // replace stdout with our own streams
     this.submissionStdout = through2();
-    console.log('The submission server listen at port %s', this.submissionPort);
+    console.log('The submission server will listen at port %s', this.submissionPort);
     if (mode === 'verify') {
-      console.log('The solution server listen at port %s', this.solutionPort);
+      console.log('The solution server will listen at port %s', this.solutionPort);
       this.solutionStdout = through2();
     }
     setTimeout(query.bind(this, mode), 500);
