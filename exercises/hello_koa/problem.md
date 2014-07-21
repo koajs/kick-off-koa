@@ -37,6 +37,12 @@ app.use(function *() {
 });
 ```
 
+A Koa Context(`this` in middlewares) encapsulates node's `request` and `response` objects into a single object which provides many helpful methods for writing web applications and APIs. To learn more about Koa Context, please check the Koa website:
+
+```
+http://koajs.com
+```
+
 You can get the port by
 
 ```

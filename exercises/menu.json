@@ -1,5 +1,6 @@
 [
     "HELLO_KOA",
     "ROUTING",
-    "BODIES"
+    "REQUEST_BODY",
+    "RESPONSE_BODY"
 ]
