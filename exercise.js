@@ -79,7 +79,6 @@ exports.generate = function () {
 
     this.submissionPort = Math.ceil(Math.random() * 10000) + 1024;
     this.solutionPort = this.submissionPort + 1;
-
     this.submissionCommand.unshift('--harmony');
     this.solutionCommand.unshift('--harmony');
 
@@ -96,7 +95,9 @@ exports.generate = function () {
     this.submissionStdout.pipe(process.stdout);
     // replace stdout with our own streams
     this.submissionStdout = through2();
-    if (mode == 'verify') {
+    console.log('The submission server listen at port %s', this.submissionPort);
+    if (mode === 'verify') {
+      console.log('The solution server listen at port %s', this.solutionPort);
       this.solutionStdout = through2();
     }
     setTimeout(query.bind(this, mode), 500);
