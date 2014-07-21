@@ -4,6 +4,18 @@ The workshop will execute requests against the server and verify the output.
 
 HINTS
 
+In all these exercises, we need koa To install koa:
+
+```
+npm install koa
+```
+
+Also we need node 0.11.9 to run the koa applications, you can use nvm to install node 0.11.9
+
+```
+https://github.com/creationix/nvm
+```
+
 Create a server that listens on port 8080 with the following code:
 
 ```
