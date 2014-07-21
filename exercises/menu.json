@@ -2,5 +2,6 @@
     "HELLO_KOA",
     "ROUTING",
     "REQUEST_BODY",
-    "RESPONSE_BODY"
+    "RESPONSE_BODY",
+    "MIDDLEWARE"
 ]
