@@ -16,7 +16,7 @@ Now, setup views:
 var views = require('co-views');
 
 var render = views(__dirname + '/views', {
-    ext: 'ejs'
+  ext: 'ejs'
 });
 ```
 
@@ -30,12 +30,12 @@ Now that must give you a clue that it requires `user` object that might look lik
 
 ```
 var user = {
-    name: {
-        first: 'Tobi',
-        last: 'Holowaychuk'
-    },
-    species: 'ferret',
-    age: 3
+  name: {
+    first: 'Tobi',
+    last: 'Holowaychuk'
+  },
+  species: 'ferret',
+  age: 3
 };
 ```
 
