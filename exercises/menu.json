@@ -4,5 +4,6 @@
     "REQUEST_BODY",
     "RESPONSE_BODY",
     "MIDDLEWARE",
-    "ERROR_HANDLING"
+    "ERROR_HANDLING",
+    "COOKIE"
 ]

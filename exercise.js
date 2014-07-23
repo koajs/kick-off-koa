@@ -46,7 +46,7 @@ function query(mode) {
     if (err) return error(err, 'submission');
 
     var verify = task[2];
-    verify(data, res, exercise.submissionStdout);
+    verify.call(exercise, data, res, exercise.submissionStdout);
     done();
   });
 
@@ -57,7 +57,7 @@ function query(mode) {
       if (err) return error(err, 'solution');
 
       var verify = task[2];
-      verify(data, res, exercise.solutionStdout);
+      verify.call(exercise, data, res, exercise.solutionStdout);
       done();
     });
   }
