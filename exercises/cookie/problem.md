@@ -24,10 +24,10 @@ HINT
 
  APIs:
 
- - `ctx.cookies.get(name, [options])`: Get cookie name with options
+ `ctx.cookies.get(name, [options])`: Get cookie name with options
     - `signed`: the cookie requested should be signed
 
- - `ctx.cookies.set(name, value, [options])`: Set cookie name to value with options:
+ `ctx.cookies.set(name, value, [options])`: Set cookie name to value with options:
 
     - `signed`: sign the cookie value
     - `expires`: a Date for cookie expiration
