@@ -6,5 +6,6 @@
     "MIDDLEWARE",
     "ERROR_HANDLING",
     "COOKIE",
+    "SESSION",
     "TEMPLATING"
 ]

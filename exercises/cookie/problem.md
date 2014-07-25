@@ -1,4 +1,4 @@
-Create an app that use session to record view times.
+Create an app that use cookie to store user's view times.
 
 1. cookie's key is `view`, you need store the view times in this cookie.
 2. every time request the server, respond must be `{time} views`.
