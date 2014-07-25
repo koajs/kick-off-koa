@@ -4,8 +4,6 @@ var app = module.exports = koa();
 var path = require('path');
 var extname = path.extname;
 
-// try GET /app.js
-
 app.use(function * () {
   var path = __dirname + this.path;
   if (fs.lstatSync(path).isFile()) {
