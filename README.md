@@ -3,7 +3,7 @@ kick-off-koa
 
 An intro to [koa](https//koajs.com) via a set of self-guided workshops.
 
-![kick-off-koa](kick-off-koa.png)
+![kick-off-koa](https://raw.githubusercontent.com/koajs/kick-off-koa/master/kick-off-koa.png)
 
 ## Install
 
