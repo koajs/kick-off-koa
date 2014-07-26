@@ -25,6 +25,10 @@ If you want to play offline, install all these dependencies first:
 npm install koa koa-session co-body co-views ejs
 ```
 
+## Learn More
+
+ - [workshop](https://github.com/koajs/workshop) - A workshop to learn the basics of koa, Express' spiritual successor.
+
 ## License
 
 MIT
