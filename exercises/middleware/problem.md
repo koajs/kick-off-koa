@@ -53,3 +53,11 @@ app.use(function* subapp(next) {
 
 In koa middlewares, use `this.set(name, val)` to set a response header.
 And change response body by reassign `this.body`.
+
+READ MORE
+
+View the `koajs` org to learn more about koa middlewares.
+
+```
+https://github.com/koajs
+```
