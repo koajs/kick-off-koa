@@ -16,3 +16,4 @@ node_modules
 coverage.html
 dump.rdb
 t.js
+.DS_Store
