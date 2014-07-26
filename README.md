@@ -17,6 +17,12 @@ To use `kick-off-koa`, you must be running node 0.11.9 or higher for generator s
 You can check [nvm](https://github.com/creationix/nvm) or [n](https://github.com/visionmedia/n) to
 install node 0.11.9+.
 
+If you want to play offline, install all these dependencies first:
+
+```
+npm install koa koa-session co-body co-views ejs
+```
+
 ## License
 
 MIT
