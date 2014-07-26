@@ -7,7 +7,9 @@ An intro to [koa](https//koajs.com) via a set of self-guided workshops.
 
 ## Install
 
-[![NPM](https://nodei.co/npm/kick-off-koa.png)](https://nodei.co/npm/kick-off-koa/)
+```
+npm install -g kick-off-koa
+```
 
 ## Getting Start
 
