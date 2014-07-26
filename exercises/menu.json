@@ -3,6 +3,7 @@
     "ROUTING",
     "REQUEST_BODY",
     "RESPONSE_BODY",
+    "CONTENT_HEADERS",
     "MIDDLEWARE",
     "ERROR_HANDLING",
     "COOKIE",
