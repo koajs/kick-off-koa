@@ -84,8 +84,8 @@ exports.generate = function () {
   // set up the data file to be passed to the submission
   exercise.addSetup(function (mode, callback) {
 
-    this.submissionPort = Math.ceil(Math.random() * 10000) + 1024;
-    this.solutionPort = this.submissionPort + 1;
+    this.submissionPort = 8000;
+    this.solutionPort = this.submissionPort;
     this.submissionCommand.unshift('--harmony');
     this.solutionCommand.unshift('--harmony');
 
