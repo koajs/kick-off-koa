@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "colors-tmpl": "^0.1.0",
+    "freeport": "^1.0.3",
     "pedding": "^1.0.0",
     "through2": "^0.5.1",
     "urllib": "^0.5.16",

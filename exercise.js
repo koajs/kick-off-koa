@@ -6,6 +6,7 @@ var comparestdout = require('workshopper-exercise/comparestdout');
 var urllib = require('urllib');
 var pedding = require('pedding');
 var fmt = require('util').format;
+var freeport = require('freeport');
 
 var argv = [];
 exports.argv = function () {
@@ -83,16 +84,18 @@ exports.generate = function () {
 
   // set up the data file to be passed to the submission
   exercise.addSetup(function (mode, callback) {
+    this.submissionPort = freeport(function(err, port){
+      if (err) { throw err; }
+      this.submissionPort = port;
+      this.solutionPort = this.submissionPort;
+      this.submissionCommand.unshift('--harmony');
+      this.solutionCommand.unshift('--harmony');
 
-    this.submissionPort = Math.ceil(Math.random() * 10000) + 1024;
-    this.solutionPort = this.submissionPort + 1;
-    this.submissionCommand.unshift('--harmony');
-    this.solutionCommand.unshift('--harmony');
+      this.submissionCommand = this.submissionCommand.concat([this.submissionPort]).concat(argv);
+      this.solutionCommand = this.solutionCommand.concat([this.solutionPort]).concat(argv);
 
-    this.submissionCommand = this.submissionCommand.concat([this.submissionPort]).concat(argv);
-    this.solutionCommand = this.solutionCommand.concat([this.solutionPort]).concat(argv);
-
-    process.nextTick(callback);
+      process.nextTick(callback);
+    }.bind(this));
   });
 
   // add a processor for both run and verify calls, added *before*
