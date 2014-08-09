@@ -1,6 +1,15 @@
 kick-off-koa
 ----------
 
+[![NPM version][npm-image]][npm-url]
+[![Gittip][gittip-image]][gittip-url]
+
+[npm-image]: https://img.shields.io/npm/v/module-template.svg?style=flat
+[npm-url]: https://npmjs.org/package/module-template
+[gittip-image]: https://img.shields.io/gittip/dead-horse.svg?style=flat
+[gittip-url]: https://www.gittip.com/dead-horse/
+
+
 An intro to [koa](https//koajs.com) via a set of self-guided workshops.
 
 ![kick-off-koa](https://raw.githubusercontent.com/koajs/kick-off-koa/master/kick-off-koa.png)
