@@ -4,8 +4,8 @@ kick-off-koa
 [![NPM version][npm-image]][npm-url]
 [![Gittip][gittip-image]][gittip-url]
 
-[npm-image]: https://img.shields.io/npm/v/module-template.svg?style=flat
-[npm-url]: https://npmjs.org/package/module-template
+[npm-image]: https://img.shields.io/npm/v/kick-off-koa.svg?style=flat
+[npm-url]: https://npmjs.org/package/kick-off-koa
 [gittip-image]: https://img.shields.io/gittip/dead-horse.svg?style=flat
 [gittip-url]: https://www.gittip.com/dead-horse/
 
