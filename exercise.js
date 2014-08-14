@@ -87,7 +87,7 @@ exports.generate = function () {
     this.submissionPort = freeport(function(err, port){
       if (err) { throw err; }
       this.submissionPort = port;
-      this.solutionPort = this.submissionPort;
+      this.solutionPort = this.submissionPort + 1;
       this.submissionCommand.unshift('--harmony');
       this.solutionCommand.unshift('--harmony');
 
