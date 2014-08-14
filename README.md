@@ -10,7 +10,7 @@ kick-off-koa
 [gittip-url]: https://www.gittip.com/dead-horse/
 
 
-An intro to [koa](https//koajs.com) via a set of self-guided workshops.
+An intro to [koa](http://koajs.com) via a set of self-guided workshops.
 
 ![kick-off-koa](https://raw.githubusercontent.com/koajs/kick-off-koa/master/kick-off-koa.png)
 
