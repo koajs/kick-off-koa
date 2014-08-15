@@ -1,6 +1,6 @@
 {
   "name": "kick-off-koa",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An intro to koa via a set of self-guided workshops",
   "main": "kick-off-koa.js",
   "scripts": {
