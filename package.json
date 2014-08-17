@@ -4,7 +4,7 @@
   "description": "An intro to koa via a set of self-guided workshops",
   "main": "kick-off-koa.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "bin": {
     "kick-off-koa": "kick-off-koa.js"
