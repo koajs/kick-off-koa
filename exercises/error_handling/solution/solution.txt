@@ -1,0 +1,4 @@
+responds OK when request /
+response status is 200 when request /
+responds internal server error when request /error
+response status is 500 when request /error

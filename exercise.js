@@ -7,6 +7,8 @@ var urllib = require('urllib');
 var pedding = require('pedding');
 var fmt = require('util').format;
 var freeport = require('freeport');
+var fs = require('fs');
+var path = require('path');
 
 var argv = [];
 exports.argv = function () {
@@ -34,12 +36,8 @@ function query(mode) {
   // end stream when task list empty
   if (!task) {
     exercise.submissionStdout.end();
-    if (mode === 'verify' && exercise.solutionStdout) exercise.solutionStdout.end();
     return;
   }
-
-  var n = mode === 'verify' ? 2 : 1;
-  var done = pedding(query.bind(exercise, mode), n);
 
   // query submisstion server
   var submissionUrl = 'http://localhost:' + exercise.submissionPort + task[0];
@@ -48,20 +46,8 @@ function query(mode) {
 
     var verify = task[2];
     verify.call(exercise, data, res, exercise.submissionStdout);
-    done();
+    query.call(exercise, mode);
   });
-
-  if (mode === 'verify') {
-    // query solution server
-    var solutionUrl = 'http://localhost:' + exercise.solutionPort + task[0];
-    urllib.request(solutionUrl, task[1], function (err, data, res) {
-      if (err) return error(err, 'solution');
-
-      var verify = task[2];
-      verify.call(exercise, data, res, exercise.solutionStdout);
-      done();
-    });
-  }
 
   function error (err, type) {
     var port = type === 'solution'
@@ -86,20 +72,14 @@ exports.generate = function () {
 
   exercise.addSetup(function (mode, callback) {
     this.submissionCommand.unshift('--harmony');
-    this.solutionCommand.unshift('--harmony');
 
     var self = this;
     freeport(function (err, port) {
       if (err) throw err;
       self.submissionPort = port;
 
-      freeport(function (err, port) {
-        self.solutionPort = port;
-        self.submissionCommand = self.submissionCommand.concat([self.submissionPort]).concat(argv);
-        self.solutionCommand = self.solutionCommand.concat([self.solutionPort]).concat(argv);
-
-        process.nextTick(callback);
-      });
+      self.submissionCommand = self.submissionCommand.concat([self.submissionPort]).concat(argv);
+      setImmediate(callback);
     });
   });
 
@@ -110,10 +90,10 @@ exports.generate = function () {
     this.submissionStdout.pipe(process.stdout);
     // replace stdout with our own streams
     this.submissionStdout = through2();
-    console.log('The submission server will listen at port %s', this.submissionPort);
     if (mode === 'verify') {
-      console.log('The solution server will listen at port %s', this.solutionPort);
-      this.solutionStdout = through2();
+      var solutionFile = path.join(this.dir, 'solution/solution.txt');
+      this.solutionStdout = fs.createReadStream(solutionFile);
+      // this.solutionStdout = fs.createReadStream();
     }
     setTimeout(query.bind(this, mode), 500);
     process.nextTick(callback.bind(null, null, true));
