@@ -12,4 +12,9 @@ files.forEach(function (file) {
   var submission = execSync('./kick-off-koa.js run ' + file).toString();
   var result = fs.readFileSync(file.replace(/\.js$/, '.txt'), 'utf8');
   assert(submission === result);
+
+  // check verify output include solution file
+  var v = execSync('./kick-off-koa.js verify ' + file).toString();
+  var solution = fs.readFileSync(file, 'utf8');
+  assert(v.replace(/\s*/g, '').indexOf(solution.replace(/\s*/g, '')) >= 0);
 });
