@@ -16,7 +16,7 @@ HINT
 In this exercise, we will use `koa-session`, to install:
 
 ```
-npm intsall koa-session
+npm install koa-session
 ```
 
 `koa-session` base on signed cookie, so we must set `app.keys`.
