@@ -4,7 +4,9 @@ The workshop will execute requests against the server and verify the output.
 
 HINTS
 
-In all these exercises, we need koa To install koa:
+In all these exercises, we need koa. 
+
+To install koa:
 
 ```
 npm install koa
@@ -22,7 +24,7 @@ Create a server that listens on port 8080 with the following code:
 var koa = require('koa');
 var app = koa();
 
-// hanlders here
+// handlers here
 // app.use(handlers);
 
 app.listen(8080);
