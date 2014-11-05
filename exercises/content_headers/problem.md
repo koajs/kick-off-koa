@@ -1,4 +1,4 @@
-Create an app that checks the Content-Type of the request.If it's `application/json`, return `{message: 'hi!'}` with appropriate content headers. Otherwise, return `ok` as a string.
+Create an app that checks the Content-Type of the request. If it's `application/json`, return `{message: 'hi!'}` with appropriate content headers. Otherwise, return `ok` as a string.
 
 HINT
 
