@@ -1,12 +1,12 @@
 Create an app that returns a stream when the client requests `/stream` and a JSON body when the client requests `/json`.
 
-When requests `/json`, the output should like
+When `/json` is requested, the output should be
 
 ```
 { foo: 'bar' }
 ```
 
-When requests `/stream`, the server should respond content in file `process.argv[3]`. Use `fs.createReadStream`:
+When `/stream` is requested, the server should respond with the content in file `process.argv[3]`. Use `fs.createReadStream`:
 
 ```
 fs.createReadStream(process.argv[3]);
@@ -29,7 +29,7 @@ app.use(function* (next) {
 })
 ```
 
-When setting a stream as a body, Koa will automatically add any error handlers so you don't have to worry about error handling.
+When setting a stream as a body, Koa will automatically add error handlers so you don't have to worry about error handling.
 
 ```
 var fs = require('fs');
