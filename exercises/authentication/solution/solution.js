@@ -32,7 +32,7 @@ app.use(function* home(next) {
  */
 
 app.use(function* login(next) {
-  if (this.request.path !== '/login') return yield* next;
+  if (this.request.path !== '/login') return yield next;
   if (this.request.method === 'GET') return this.body = form;
   if (this.request.method !== 'POST') return;
 
@@ -51,7 +51,7 @@ app.use(function* login(next) {
  */
 
 app.use(function* logout(next) {
-  if (this.request.path !== '/logout') return yield* next;
+  if (this.request.path !== '/logout') return yield next;
   this.session.authenticated = false;
   this.redirect('/login');
 });
