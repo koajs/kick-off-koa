@@ -4,3 +4,4 @@
 -----------------------------------
 dead-horse                @dead-horse
 hemanth.hm                @hemanth
+Yoshua Wuyts              @yoshuawuyts
