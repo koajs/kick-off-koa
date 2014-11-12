@@ -35,4 +35,4 @@ You can set the response status by:
 this.status = 404;
 ```
 
-Each Koa app is an EventEmitter instance. All errors uncaught by any middleware to `app.on('error', function (err, context) {})`. This is useful for logging. However, if you create your own error handler (i.e. catching it), you will have to manually emit these events yourself.
+Each Koa app is an EventEmitter instance. All errors uncaught by any middleware are sent to `app.on('error', function (err, context) {})`. This is useful for logging. However, if you create your own error handler (i.e. catching it), you will have to manually emit these events yourself.
