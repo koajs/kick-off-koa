@@ -43,7 +43,7 @@ app.use(session());
 app.use(function* home(next) {
   if (this.request.path !== '/') return yield next;
 
-})
+});
 
 /**
  * If successful, the logged in user should be redirected to `/`.
