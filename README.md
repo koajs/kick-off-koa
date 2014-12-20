@@ -27,9 +27,9 @@ npm install -g kick-off-koa
 
 After `npm install -g kick-off-koa`, Run `kick-off-koa` command.
 
-To use `kick-off-koa`, you must be running node 0.11.9 or higher for generator support.
+To use `kick-off-koa`, you must be running node 0.11.13 or higher for generator and promise support.
 You can check [nvm](https://github.com/creationix/nvm) or [n](https://github.com/visionmedia/n) to
-install node 0.11.9+.
+install node 0.11.13+.
 
 If you want to play offline, install all these dependencies first:
 
