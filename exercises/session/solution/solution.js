@@ -4,7 +4,7 @@ var session = require('koa-session');
 var app = koa();
 app.keys = ['secret', 'keys'];
 
-app.use(session());
+app.use(session(app));
 
 app.use(function *(){
   var n = ~~this.session.view + 1;

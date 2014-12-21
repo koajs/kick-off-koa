@@ -13,7 +13,7 @@ var app = koa();
 // use koa-session somewhere at the top of the app
 // we need to set the `.keys` for signed cookies and the cookie-session module
 app.keys = ['secret1', 'secret2', 'secret3'];
-app.use(session());
+app.use(session(app));
 
 /**
  * If `this.session.authenticated` exist, user will see 'hello world'
