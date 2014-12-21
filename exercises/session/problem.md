@@ -28,7 +28,7 @@ var session = require('koa-session');
 var app = koa();
 app.keys = ['secret', 'keys'];
 
-app.use(session());
+app.use(session(app));
 ```
 
 Then you can use `this.session` in koa handler.

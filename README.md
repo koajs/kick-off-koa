@@ -23,7 +23,7 @@ An intro to [koa](http://koajs.com) via a set of self-guided workshops.
 npm install -g kick-off-koa
 ```
 
-## Getting Start
+## Getting Started
 
 After `npm install -g kick-off-koa`, Run `kick-off-koa` command.
 
