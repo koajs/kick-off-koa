@@ -39,6 +39,12 @@ app.use(function *() {
 });
 ```
 
+You can read more about ECMAScript 6 generator functions here:
+
+```
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+```
+
 A Koa Context(`this` in middlewares) encapsulates node's `request` and `response` objects into a single object which provides many helpful methods for writing web applications and APIs. To learn more about Koa Context, please check the Koa website:
 
 ```
