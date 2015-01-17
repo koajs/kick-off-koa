@@ -18,7 +18,7 @@ Also we need node 0.11.9 to run the koa applications, you can use nvm to install
 https://github.com/creationix/nvm
 ```
 
-Create a server that listens on port 8080 with the following code:
+Create a server that listens on a given port number with the following code:
 
 ```
 var koa = require('koa');
@@ -27,7 +27,13 @@ var app = koa();
 // handlers here
 // app.use(handlers);
 
-app.listen(8080);
+app.listen(port);
+```
+
+You can get the port by
+
+```
+var port = process.argv[2];
 ```
 
 Handlers can be anonymous generate functions or separately declared (just like in javascript :P):
@@ -49,10 +55,4 @@ A Koa Context(`this` in middlewares) encapsulates node's `request` and `response
 
 ```
 http://koajs.com
-```
-
-You can get the port by
-
-```
-var port = process.argv[2];
 ```
