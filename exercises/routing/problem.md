@@ -44,3 +44,9 @@ There are more properties you're probably interested in when routing:
 - this.method
 - this.query
 - this.host
+
+Also there are some router middlewares for koa, you can find them in npm:
+
+- koa-route
+- koa-router
+- koa-resource-router
