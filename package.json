@@ -23,19 +23,19 @@
   "dependencies": {
     "colors-tmpl": "^1.0.0",
     "combined-stream": "0.0.7",
-    "freeport": "^1.0.3",
+    "freeport": "^1.0.4",
     "pedding": "^1.0.0",
     "through2": "^0.6.3",
-    "urllib": "^0.5.16",
+    "urllib": "^2.3.0",
     "workshopper": "^2.3.1",
     "workshopper-exercise": "^2.3.0"
   },
   "devDependencies": {
-    "co-body": "^1.0.0",
-    "co-views": "^0.2.0",
-    "ejs": "^1.0.0",
-    "glob": "^4.0.5",
-    "koa": "^0.14.0",
-    "koa-session": "^3.0.0"
+    "co-body": "^1.1.0",
+    "co-views": "^0.3.0",
+    "ejs": "^2.3.1",
+    "glob": "^4.4.1",
+    "koa": "^0.18.1",
+    "koa-session": "^3.1.0"
   }
 }
