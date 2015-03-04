@@ -3,5 +3,15 @@
   "subtitle": "\u001b[23mSelect an exercise and hit \u001b[3mEnter\u001b[23m to begin",
   "menu": {
     "credits": "CREDITS"
+  },
+  "common": {
+    "exercise": {
+      "fail": {
+        "cannot_connect": "Error connecting to %s server (http://localhost:%s%s), options: %j. %s"
+      },
+      "server_type": {
+        "submission": "submission"
+      }
+    }
   }
 }

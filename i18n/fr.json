@@ -4,6 +4,16 @@
   "menu": {
     "credits": "CRÉDITS"
   },
+  "common": {
+    "exercise": {
+      "fail": {
+        "cannot_connect": "Connexion impossible au serveur %s (http://localhost:%s%s), options : %j. %s"
+      },
+      "server_type": {
+        "submission": "de l’apprenant"
+      }
+    }
+  },
   "exercise": {
     "HELLO_KOA": "BONJOUR KOA",
     "ROUTING": "ROUTAGE",
