@@ -1,0 +1,20 @@
+{
+  "title": "KICK OFF KOA",
+  "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer",
+  "menu": {
+    "credits": "CRÉDITS"
+  },
+  "exercise": {
+    "HELLO_KOA": "BONJOUR KOA",
+    "ROUTING": "ROUTAGE",
+    "REQUEST_BODY": "CORPS DE REQUÊTE",
+    "RESPONSE_BODY": "CORPS DE RÉPONSE",
+    "CONTENT_HEADERS": "EN-TÊTES DE CONTENU",
+    "MIDDLEWARE": "MIDDLEWARE",
+    "ERROR_HANDLING": "GESTION DES ERREURS",
+    "COOKIE": "COOKIE",
+    "SESSION": "SESSION",
+    "TEMPLATING": "GABARITS (TEMPLATING)",
+    "AUTHENTICATION": "AUTHENTIFICATION"
+  }
+}

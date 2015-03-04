@@ -1,0 +1,4 @@
+{yellow}{bold}kick-off-koa vous est fourni par les personnes suivantes:{/bold}{/yellow}
+
+{bold}Nom                       Compte GitHub{/bold}
+---------------------------------------

@@ -1,7 +1,4 @@
-{yellow}{bold}koaiscool is brought to you by the following persons:{/bold}{/yellow}
-
-{bold}Name                GitHub Username{/bold}
------------------------------------
 dead-horse                @dead-horse
 hemanth.hm                @hemanth
 Yoshua Wuyts              @yoshuawuyts
+Christophe Porteneuve     @tdd
