@@ -1,7 +1,7 @@
-Create a koa server that listen on a port passed from the command line. and returns the following responses from the following routes:
+Create a koa server that listen on a port passed from the command line, and returns the following responses from the following routes:
 
 ```
-/ - hello koa
+/    - hello koa
 /404 - page not found
 /500 - internal server error
 ```

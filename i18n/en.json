@@ -13,5 +13,10 @@
         "submission": "submission"
       }
     }
+  },
+  "exercises": {
+    "ROUTING": {
+      "log_format": "`%s` respond body: %s\n"
+    }
   }
 }

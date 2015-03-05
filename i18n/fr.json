@@ -26,5 +26,10 @@
     "SESSION": "SESSION",
     "TEMPLATING": "GABARITS (TEMPLATING)",
     "AUTHENTICATION": "AUTHENTIFICATION"
+  },
+  "exercises": {
+    "ROUTING": {
+      "log_format": "corps de réponse pour `%s` : %s\n"
+    }
   }
 }
