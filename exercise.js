@@ -91,7 +91,7 @@ exports.generate = function () {
     // replace stdout with our own streams
     this.submissionStdout = through2();
     if (mode === 'verify') {
-      var solutionFile = this.solution.replace(/\.js$/, '.txt');
+      var solutionFile = path.join(this.dir, 'solution_' + this.lang + '/solution.txt');
       if (!fs.existsSync(solutionFile)) {
         solutionFile = path.join(this.dir, 'solution/solution.txt');
       }

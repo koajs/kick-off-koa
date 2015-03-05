@@ -33,6 +33,11 @@
     },
     "REQUEST_BODY": {
       "log_conversion": "conversion de `%s` en `%s`\n"
+    },
+    "RESPONSE_BODY": {
+      "log_body": "corps de réponse pour `%s` : %s\n",
+      "log_ctype": "content-type renvoyé pour `%s` : %s\n",
+      "log_encoding": "transfer-encoding renvoyé pour `%s` : %s\n"
     }
   }
 }

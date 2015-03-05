@@ -20,6 +20,11 @@
     },
     "REQUEST_BODY": {
       "log_conversion": "convert `%s` to `%s`\n"
+    },
+    "RESPONSE_BODY": {
+      "log_body": "`%s` respond body: %s\n",
+      "log_ctype": "`%s` respond content-type: %s\n",
+      "log_encoding": "`%s` respond transfer-encoding: %s\n"
     }
   }
 }
