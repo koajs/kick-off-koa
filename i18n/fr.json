@@ -29,37 +29,37 @@
   },
   "exercises": {
     "ROUTING": {
-      "log_format": "corps de réponse pour `%s` : %s\n"
+      "log_format": "corps de réponse pour `%s` : %s"
     },
     "REQUEST_BODY": {
-      "log_conversion": "conversion de `%s` en `%s`\n"
+      "log_conversion": "conversion de `%s` en `%s`"
     },
     "RESPONSE_BODY": {
-      "log_body": "corps de réponse pour `%s` : %s\n",
-      "log_ctype": "content-type renvoyé pour `%s` : %s\n",
-      "log_encoding": "transfer-encoding renvoyé pour `%s` : %s\n"
+      "log_body": "corps de réponse pour `%s` : %s",
+      "log_ctype": "content-type renvoyé pour `%s` : %s",
+      "log_encoding": "transfer-encoding renvoyé pour `%s` : %s"
     },
     "MIDDLEWARE": {
-      "log_uppercase": "le middleware `upperCase` a converti le corps de réponse en « %s »\n",
-      "log_response_time": "le middleware `responseTime` a défini l’en-tête `X-Response-Time`\n"
+      "log_uppercase": "le middleware `upperCase` a converti le corps de réponse en « %s »",
+      "log_response_time": "le middleware `responseTime` a défini l’en-tête `X-Response-Time`"
     },
     "ERROR_HANDLING": {
-      "log_body": "répond « %s » quand requêté sur `%s`\n",
-      "log_status": "répond avec un statut %d quand requêté sur `%s`\n"
+      "log_body": "répond « %s » quand requêté sur `%s`",
+      "log_status": "répond avec un statut %d quand requêté sur `%s`"
     },
     "COOKIE": {
-      "fail.unset_cookie": "cookie.view non défini\n",
-      "fail.set_unsigned": "ctx.cookies.set aurait dû être appelée avec options.signed = true\n",
-      "fail.get_unsigned": "ctx.cookies.get aurait dû être appelée avec options.signed = true\n",
-      "log.first_visit": "première visite : %s\n",
-      "log.visit_again": "visite suivante : %s\n",
-      "log.signed": "un cookie signé ne peut être falsifié\n",
+      "fail.unset_cookie": "cookie.view non défini",
+      "fail.set_unsigned": "ctx.cookies.set aurait dû être appelée avec options.signed = true",
+      "fail.get_unsigned": "ctx.cookies.get aurait dû être appelée avec options.signed = true",
+      "log.first_visit": "première visite : %s",
+      "log.visit_again": "visite suivante : %s",
+      "log.signed": "un cookie signé ne peut être falsifié",
       "output.one_view": "vu 1 fois"
     },
     "SESSION": {
-      "log.first_visit": "première visite : %s\n",
-      "log.visit_again": "visite suivante : %s\n",
-      "log.new_user_visit": "visite d’un nouvel utilisateur : %s\n"
+      "log.first_visit": "première visite : %s",
+      "log.visit_again": "visite suivante : %s",
+      "log.new_user_visit": "visite d’un nouvel utilisateur : %s"
     },
     "AUTHENTICATION": {
       "fail.no_initial_401": "GET /       : la personne non authentifiée aurait dû recevoir une erreur 401, mais a reçu %d",
@@ -67,11 +67,11 @@
       "fail.no_login_redirect": "POST /login : la personne devrait être redirigée sur `/`",
       "fail.no_logout_redirect": "GET /logout : la personne devrait être redirigée sur `/login`",
       "fail.no_final_401": "GET /       : la personne déconnectée devrait recevoir une erreur 401",
-      "log.initial_401": "GET /       : la personne non authentifiée reçoit une erreur 401\n",
-      "log.auth_check": "POST /login : erreur 400 quand username ou password est incorrect\n",
-      "log.login_redirect": "POST /login : connexion réussie\n",
-      "log.logout_redirect": "GET /logout : la personne est redirigée vers `/login`\n",
-      "log.final_401": "GET /       : la personne déconnectée reçoit une erreur 401\n"
+      "log.initial_401": "GET /       : la personne non authentifiée reçoit une erreur 401",
+      "log.auth_check": "POST /login : erreur 400 quand username ou password est incorrect",
+      "log.login_redirect": "POST /login : connexion réussie",
+      "log.logout_redirect": "GET /logout : la personne est redirigée vers `/login`",
+      "log.final_401": "GET /       : la personne déconnectée reçoit une erreur 401"
     }
   }
 }

@@ -8,7 +8,7 @@ var headers = {
 
 module.exports = exercise
 .push('/', { headers: headers }, function (data, res, stream) {
-  stream.write(this.__('log.first_visit', data.toString()));
+  this.strOut(stream, 'log.first_visit', data.toString());
 
   var setCookies = res.headers['set-cookie'].join(';');
   if (!~setCookies.indexOf('view=')) {
@@ -22,13 +22,13 @@ module.exports = exercise
   headers.cookie = setCookies;
 })
 .push('/', { headers: headers }, function (data, res, stream) {
-  stream.write(this.__('log.visit_again', data.toString()));
+  this.strOut(stream, 'log.visit_again', data.toString());
 })
 .push('/', { headers: { cookie: 'view=100;' } }, function (data, res, stream) {
   if (data.toString() !== this.__('output.one_view')) {
     this.emit('fail', this.__('fail.get_unsigned'));
     process.exit(1);
   }
-  stream.write(this.__('log.signed'));
+  this.strOut(stream, 'log.signed');
 })
 .generate();

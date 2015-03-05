@@ -12,7 +12,7 @@ module.exports = exercise
     this.emit('fail', this.__('fail.no_initial_401', res.statusCode));
     process.exit(1);
   }
-  stream.write(this.__('log.initial_401'));
+  this.strOut(stream, 'log.initial_401');
 })
 
 .push('/login', {
@@ -26,7 +26,7 @@ module.exports = exercise
     this.emit('fail', this.__('fail.no_auth_check'));
     process.exit(1);
   }
-  stream.write(this.__('log.auth_check'));
+  this.strOut(stream, 'log.auth_check');
 })
 
 .push('/login', {
@@ -43,7 +43,7 @@ module.exports = exercise
     process.exit(1);
   }
   headers.cookie = res.headers['set-cookie'].join(';');
-  stream.write(this.__('log.login_redirect'));
+  this.strOut(stream, 'log.login_redirect');
 })
 
 .push('/', {
@@ -61,7 +61,7 @@ module.exports = exercise
     process.exit(1);
   }
   headers.cookie = res.headers['set-cookie'].join(';');
-  stream.write(this.__('log.logout_redirect'));
+  this.strOut(stream, 'log.logout_redirect');
 })
 
 .push('/', {
@@ -71,6 +71,6 @@ module.exports = exercise
     this.emit('fail', this.__('fail.no_final_401'));
     process.exit(1);
   }
-  stream.write(this.__('log.final_401'));
+  this.strOut(stream, 'log.final_401');
 })
 .generate();

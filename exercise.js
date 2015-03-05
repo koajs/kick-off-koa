@@ -103,6 +103,14 @@ exports.generate = function () {
     process.nextTick(callback.bind(null, null, true));
   });
 
+  exercise.strOut = function strOut(stream, key) {
+    var args = Array.prototype.slice.call(arguments, 2);
+    args.unshift(this.__(key));
+    var result = fmt.apply(null, args);
+    if ("\n" !== result.slice(-1)) result += "\n";
+    stream.write(result);
+  };
+
 
   // compare stdout of solution and submission
   exercise = comparestdout(exercise)
