@@ -1,5 +1,6 @@
-In previous exercise, we learned how to use cookie to store user's view times.
-But in this exercise, we will try to use session to do the same thing.
+In the previous exercise, we learned how to use cookies to store the user's
+view times.  But in this exercise, we will try to use sessions to do the same
+thing.
 
 visit `/`:
 =>
@@ -13,13 +14,13 @@ set-cookie: `view=2`
 
 HINT
 
-In this exercise, we will use `koa-session`, to install:
+In this exercise, we will use `koa-session`, so install it:
 
 ```
 npm install koa-session
 ```
 
-`koa-session` base on signed cookie, so we must set `app.keys`.
+`koa-session` is based on signed cookies, so we must set `app.keys`.
 
 ```
 var koa = require('koa');
@@ -31,11 +32,12 @@ app.keys = ['secret', 'keys'];
 app.use(session(app));
 ```
 
-Then you can use `this.session` in koa handler.
+Then you can use `this.session` in koa handlers.
 
 READ MORE
 
-`koa-session` is cookie-base session, and `koa-generic-session` is the generic one like express.
+`koa-session` uses cookie-based sessions, and `koa-generic-session` is a more
+generic implementation, as in Express.
 
 ```
 https://github.com/koajs/session

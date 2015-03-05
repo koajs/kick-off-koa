@@ -8,13 +8,13 @@ var headers = {
 
 module.exports = exercise
 .push('/', { headers: headers }, function (data, res, stream) {
-  stream.write(fmt('first visit: %s\n', data.toString()));
+  stream.write(this.__('log.first_visit', data.toString()));
   headers.cookie = res.headers['set-cookie'].join(';');
 })
 .push('/', { headers: headers }, function (data, res, stream) {
-  stream.write(fmt('visit again: %s\n', data.toString()));
+  stream.write(this.__('log.visit_again', data.toString()));
 })
 .push('/', function (data, res, stream) {
-  stream.write(fmt('new user visit page: %s\n', data.toString()));
+  stream.write(this.__('log.new_user_visit', data.toString()));
 })
 .generate();

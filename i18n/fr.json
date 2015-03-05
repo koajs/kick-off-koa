@@ -55,6 +55,11 @@
       "log.visit_again": "visite suivante : %s\n",
       "log.signed": "un cookie signé ne peut être falsifié\n",
       "output.one_view": "vu 1 fois"
+    },
+    "SESSION": {
+      "log.first_visit": "première visite : %s\n",
+      "log.visit_again": "visite suivante : %s\n",
+      "log.new_user_visit": "visite d’un nouvel utilisateur : %s\n"
     }
   }
 }

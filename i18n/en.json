@@ -42,6 +42,11 @@
       "log.visit_again": "visit again: %s\n",
       "log.signed": "signed cookie can not be tampered\n",
       "output.one_view": "1 views"
+    },
+    "SESSION": {
+      "log.first_visit": "first visit: %s\n",
+      "log.visit_again": "visit again: %s\n",
+      "log.new_user_visit": "new user visit page: %s\n"
     }
   }
 }
