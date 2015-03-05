@@ -25,6 +25,10 @@
       "log_body": "`%s` respond body: %s\n",
       "log_ctype": "`%s` respond content-type: %s\n",
       "log_encoding": "`%s` respond transfer-encoding: %s\n"
+    },
+    "MIDDLEWARE": {
+      "log_uppercase": "`upperCase` middleware convert response body to \"%s\"\n",
+      "log_response_time": "`responseTime` middleware set `X-Response-Time` header\n"
     }
   }
 }

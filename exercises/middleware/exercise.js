@@ -3,9 +3,9 @@ var exercise = require('../../exercise');
 
 module.exports = exercise
 .push('/', function (data, res, stream) {
-  stream.write('`upperCase` middleware convert response body to `' + data.toString() + '`\n');
+  stream.write(this.__('log_uppercase', data.toString()));
   if (res.headers['x-response-time']) {
-    stream.write('`responseTime` middleware set `X-Response-Time` header\n');
+    stream.write(this.__('log_response_time'));
   }
 })
 .generate();

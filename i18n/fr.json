@@ -38,6 +38,10 @@
       "log_body": "corps de réponse pour `%s` : %s\n",
       "log_ctype": "content-type renvoyé pour `%s` : %s\n",
       "log_encoding": "transfer-encoding renvoyé pour `%s` : %s\n"
+    },
+    "MIDDLEWARE": {
+      "log_uppercase": "le middleware `upperCase` a converti le corps de réponse en « %s »\n",
+      "log_response_time": "le middleware `responseTime` a défini l’en-tête `X-Response-Time`\n"
     }
   }
 }
