@@ -4,14 +4,14 @@ var parse = require('co-body');
 var app = koa();
 
 app.use(function* (next) {
-  // only accept POST request
+  // on accepte uniquement les requêtes POST
   if (this.method !== 'POST') return yield next;
 
-  // max body size limit to `1kb`
+  // taille maximum du corps de requête : 1 Ko
   var body = yield parse(this, { limit: '1kb' });
 
-  // if body.name not exist, respond `400`
-  if (!body.name) this.throw(400, '.name required');
+  // si body.name n’existe pas, on répond `400`
+  if (!body.name) this.throw(400, '.name requis');
 
   this.body = body.name.toUpperCase();
 });

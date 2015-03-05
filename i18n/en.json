@@ -17,6 +17,9 @@
   "exercises": {
     "ROUTING": {
       "log_format": "`%s` respond body: %s\n"
+    },
+    "REQUEST_BODY": {
+      "log_conversion": "convert `%s` to `%s`\n"
     }
   }
 }

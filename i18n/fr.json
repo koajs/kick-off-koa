@@ -30,6 +30,9 @@
   "exercises": {
     "ROUTING": {
       "log_format": "corps de réponse pour `%s` : %s\n"
+    },
+    "REQUEST_BODY": {
+      "log_conversion": "conversion de `%s` en `%s`\n"
     }
   }
 }
