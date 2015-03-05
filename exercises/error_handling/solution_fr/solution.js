@@ -11,15 +11,15 @@ app.use(function* () {
 
 function errorHandler() {
   return function* (next) {
-    // we catch all downstream errors here
+    // on capture ici toutes les erreurs du reste de la pile
     try {
       yield next;
     } catch (err) {
-      // set response status
+      // statut de la réponse
       this.status = 500;
-      // set response body
-      this.body = 'internal server error';
-      // can emit on app for log
+      // corps de la réponse
+      this.body = 'erreur serveur interne';
+      // si on souhaite loguer l’erreur de façon générale, on ferait :
       // this.app.emit('error', err, this);
     }
   };

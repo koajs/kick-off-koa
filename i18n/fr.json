@@ -42,6 +42,10 @@
     "MIDDLEWARE": {
       "log_uppercase": "le middleware `upperCase` a converti le corps de réponse en « %s »\n",
       "log_response_time": "le middleware `responseTime` a défini l’en-tête `X-Response-Time`\n"
+    },
+    "ERROR_HANDLING": {
+      "log_body": "répond « %s » quand requêté sur `%s`\n",
+      "log_status": "répond avec un statut %d quand requêté sur `%s`\n"
     }
   }
 }

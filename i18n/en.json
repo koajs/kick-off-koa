@@ -29,6 +29,10 @@
     "MIDDLEWARE": {
       "log_uppercase": "`upperCase` middleware convert response body to \"%s\"\n",
       "log_response_time": "`responseTime` middleware set `X-Response-Time` header\n"
+    },
+    "ERROR_HANDLING": {
+      "log_body": "responds \"%s\" when requesting `%s`\n",
+      "log_status": "response status is %d when requesting `%s`\n"
     }
   }
 }
