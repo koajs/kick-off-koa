@@ -16,13 +16,13 @@ set-cookie: `view=2`
 
 HINT
 
- koa uses the `cookies` module to operate cookies.
+koa uses the `cookies` module to operate cookies.
 
- ```
- https://github.com/expressjs/cookies
- ```
+```
+https://github.com/expressjs/cookies
+```
 
- APIs:
+APIs:
 
 `ctx.cookies.get(name, [options])`: Get cookie name with options
   - `signed`: the cookie requested should be signed
@@ -31,7 +31,7 @@ HINT
 
   - `signed`: sign the cookie value
   - `expires`: a Date for cookie expiration
-  - `path`: cookie path, /' by default
+  - `path`: cookie path, '/' by default
   - `domain`: cookie domain
   - `secure`: secure cookie
   - `httpOnly`: server-accessible cookie, true by default

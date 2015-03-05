@@ -46,6 +46,15 @@
     "ERROR_HANDLING": {
       "log_body": "répond « %s » quand requêté sur `%s`\n",
       "log_status": "répond avec un statut %d quand requêté sur `%s`\n"
+    },
+    "COOKIE": {
+      "fail.unset_cookie": "cookie.view non défini\n",
+      "fail.set_unsigned": "ctx.cookies.set aurait dû être appelée avec options.signed = true\n",
+      "fail.get_unsigned": "ctx.cookies.get aurait dû être appelée avec options.signed = true\n",
+      "log.first_visit": "première visite : %s\n",
+      "log.visit_again": "visite suivante : %s\n",
+      "log.signed": "un cookie signé ne peut être falsifié\n",
+      "output.one_view": "vu 1 fois"
     }
   }
 }

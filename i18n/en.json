@@ -33,6 +33,15 @@
     "ERROR_HANDLING": {
       "log_body": "responds \"%s\" when requesting `%s`\n",
       "log_status": "response status is %d when requesting `%s`\n"
+    },
+    "COOKIE": {
+      "fail.unset_cookie": "cookie.view not set\n",
+      "fail.set_unsigned": "ctx.cookies.set should set options.signed = true\n",
+      "fail.get_unsigned": "ctx.cookies.get should set options.signed = true\n",
+      "log.first_visit": "first visit: %s\n",
+      "log.visit_again": "visit again: %s\n",
+      "log.signed": "signed cookie can not be tampered\n",
+      "output.one_view": "1 views"
     }
   }
 }
