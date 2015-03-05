@@ -60,6 +60,18 @@
       "log.first_visit": "première visite : %s\n",
       "log.visit_again": "visite suivante : %s\n",
       "log.new_user_visit": "visite d’un nouvel utilisateur : %s\n"
+    },
+    "AUTHENTICATION": {
+      "fail.no_initial_401": "GET /       : la personne non authentifiée aurait dû recevoir une erreur 401, mais a reçu %d",
+      "fail.no_auth_check": "POST /login : des identifiants incorrects devraient produire une erreur 400",
+      "fail.no_login_redirect": "POST /login : la personne devrait être redirigée sur `/`",
+      "fail.no_logout_redirect": "GET /logout : la personne devrait être redirigée sur `/login`",
+      "fail.no_final_401": "GET /       : la personne déconnectée devrait recevoir une erreur 401",
+      "log.initial_401": "GET /       : la personne non authentifiée reçoit une erreur 401\n",
+      "log.auth_check": "POST /login : erreur 400 quand username ou password est incorrect\n",
+      "log.login_redirect": "POST /login : connexion réussie\n",
+      "log.logout_redirect": "GET /logout : la personne est redirigée vers `/login`\n",
+      "log.final_401": "GET /       : la personne déconnectée reçoit une erreur 401\n"
     }
   }
 }

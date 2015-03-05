@@ -47,6 +47,18 @@
       "log.first_visit": "first visit: %s\n",
       "log.visit_again": "visit again: %s\n",
       "log.new_user_visit": "new user visit page: %s\n"
+    },
+    "AUTHENTICATION": {
+      "fail.no_initial_401": "GET /       : non-logged-in user should get 401 error, but got %d",
+      "fail.no_auth_check": "POST /login : incorrect username or password must return 400 error",
+      "fail.no_login_redirect": "POST /login : user should be redirected to `/`",
+      "fail.no_logout_redirect": "GET /logout : user should be redirected to `/login`",
+      "fail.no_final_401": "GET /       : logged-out user should get 401 error",
+      "log.initial_401": "GET /       : non-logged-in user get 401 error\n",
+      "log.auth_check": "POST /login : 400 error when incorrect username or password\n",
+      "log.login_redirect": "POST /login : login successful\n",
+      "log.logout_redirect": "GET /logout : user is redirected to `/login`\n",
+      "log.final_401": "GET /       : logged-out user get 401 error\n"
     }
   }
 }
