@@ -31,5 +31,5 @@ Also Koa has `this.response.is()`, the same as `this.request.is()` but for the r
 Learn more about request.is().
 
 ```
-http://koajs.com/#req-is-types-
+http://koajs.com/#request-is-types-
 ```
