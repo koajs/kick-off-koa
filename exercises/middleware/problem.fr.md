@@ -48,7 +48,7 @@ app.use(function* decorator(function (subapp) {
 }));
 
 app.use(function* subapp(next) {
-  this.response.body = 'bonjour monde';
+  this.response.body = 'Bonjour tout le monde';
 });
 ```
 

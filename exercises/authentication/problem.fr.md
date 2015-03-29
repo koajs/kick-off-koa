@@ -4,7 +4,7 @@ tout ça pour créer une appli très simple avec des fonctionnalités de connexi
 et de déconnexion.  Nous définirons les routes suivantes :
 
 1) `/`
-  - Si la personne est loguée, elle devrait voir « bonjour monde ».
+  - Si la personne est loguée, elle devrait voir « Bonjour tout le monde ».
   - Sinon, elle aura une erreur 401 faute d’authentification.
 
 2) `/login`
@@ -50,7 +50,7 @@ app.keys = ['secret1', 'secret2', 'secret3'];
 app.use(session(app));
 
 /**
- * Si `this.session.authenticated` existe, la personne voit « bonjour monde ».
+ * Si `this.session.authenticated` existe, la personne voit « Bonjour tout le monde ».
  * Dans le cas contraire, elle reçoit une erreur 401, faute d’authentification.
  */
 app.use(function* home(next) {

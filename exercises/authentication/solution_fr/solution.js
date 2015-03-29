@@ -16,13 +16,13 @@ app.keys = ['secret1', 'secret2', 'secret3'];
 app.use(session(app));
 
 /**
- * Si `this.session.authenticated` existe, la personne voit « bonjour monde ».
+ * Si `this.session.authenticated` existe, la personne voit « Bonjour tout le monde ».
  * Dans le cas contraire, elle reçoit une erreur 401, faute d’authentification.
  */
 app.use(function* home(next) {
   if (this.request.path !== '/') return yield next;
 
-  if (this.session.authenticated) return this.body = 'bonjour monde';
+  if (this.session.authenticated) return this.body = 'Bonjour tout le monde';
 
   this.status = 401;
 });
