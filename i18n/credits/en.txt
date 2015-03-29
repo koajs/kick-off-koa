@@ -1,0 +1,4 @@
+{yellow}{bold}kick-off-koa is brought to you by the following persons:{/bold}{/yellow}
+
+{bold}Name                      GitHub Username{/bold}
+-----------------------------------------

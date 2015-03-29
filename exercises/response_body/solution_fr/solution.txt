@@ -1,0 +1,5 @@
+corps de la réponse pour `/json` : {"foo":"bar"}
+content-type renvoyé pour `/json` : application/json; charset=utf-8
+corps de la réponse pour `/stream` : Setting a stream as a body.
+content-type renvoyé pour `/stream` : application/octet-stream
+transfer-encoding renvoyé pour `/stream` : chunked

@@ -4,12 +4,12 @@ var fmt = require('util').format;
 
 module.exports = exercise
 .push('/', function (data, res, stream) {
-  stream.write(fmt('`/` respond body: %s\n', data.toString()));
+  this.strOut(stream, 'log_format', '/', data.toString())
 })
 .push('/404', function (data, res, stream) {
-  stream.write(fmt('`/404` respond body: %s\n', data.toString()));
+  this.strOut(stream, 'log_format', '/404', data.toString())
 })
 .push('/500', function (data, res, stream) {
-  stream.write(fmt('`/500` respond body: %s\n', data.toString()));
+  this.strOut(stream, 'log_format', '/500', data.toString())
 })
 .generate();

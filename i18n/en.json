@@ -1,0 +1,64 @@
+{
+  "title": "KICK OFF KOA",
+  "subtitle": "\u001b[23mSelect an exercise and hit \u001b[3mEnter\u001b[23m to begin",
+  "menu": {
+    "credits": "CREDITS"
+  },
+  "common": {
+    "exercise": {
+      "fail": {
+        "cannot_connect": "Error connecting to %s server (http://localhost:%s%s), options: %j. %s"
+      },
+      "server_type": {
+        "submission": "submission"
+      }
+    }
+  },
+  "exercises": {
+    "ROUTING": {
+      "log_format": "`%s` respond body: %s"
+    },
+    "REQUEST_BODY": {
+      "log_conversion": "convert `%s` to `%s`"
+    },
+    "RESPONSE_BODY": {
+      "log_body": "`%s` respond body: %s",
+      "log_ctype": "`%s` respond content-type: %s",
+      "log_encoding": "`%s` respond transfer-encoding: %s"
+    },
+    "MIDDLEWARE": {
+      "log_uppercase": "`upperCase` middleware convert response body to \"%s\"",
+      "log_response_time": "`responseTime` middleware set `X-Response-Time` header"
+    },
+    "ERROR_HANDLING": {
+      "log_body": "responds \"%s\" when requesting `%s`",
+      "log_status": "response status is %d when requesting `%s`"
+    },
+    "COOKIE": {
+      "fail.unset_cookie": "cookie.view not set",
+      "fail.set_unsigned": "ctx.cookies.set should set options.signed = true",
+      "fail.get_unsigned": "ctx.cookies.get should set options.signed = true",
+      "log.first_visit": "first visit: %s",
+      "log.visit_again": "visit again: %s",
+      "log.signed": "signed cookie can not be tampered",
+      "output.one_view": "1 views"
+    },
+    "SESSION": {
+      "log.first_visit": "first visit: %s",
+      "log.visit_again": "visit again: %s",
+      "log.new_user_visit": "new user visit page: %s"
+    },
+    "AUTHENTICATION": {
+      "fail.no_initial_401": "GET /       : non-logged-in user should get 401 error, but got %d",
+      "fail.no_auth_check": "POST /login : incorrect username or password must return 400 error",
+      "fail.no_login_redirect": "POST /login : user should be redirected to `/`",
+      "fail.no_logout_redirect": "GET /logout : user should be redirected to `/login`",
+      "fail.no_final_401": "GET /       : logged-out user should get 401 error",
+      "log.initial_401": "GET /       : non-logged-in user get 401 error",
+      "log.auth_check": "POST /login : 400 error when incorrect username or password",
+      "log.login_redirect": "POST /login : login successful",
+      "log.logout_redirect": "GET /logout : user is redirected to `/login`",
+      "log.final_401": "GET /       : logged-out user get 401 error"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+corps de la réponse pour `/` : bonjour koa
+corps de la réponse pour `/404` : page introuvable
+corps de la réponse pour `/500` : erreur serveur interne

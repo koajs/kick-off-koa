@@ -1,0 +1,4 @@
+répond « OK » quand une requête est faite vers `/`
+répond avec un statut 200 quand une requête est faite vers `/`
+répond « erreur serveur interne » quand une requête est faite vers `/error`
+répond avec un statut 500 quand une requête est faite vers `/error`

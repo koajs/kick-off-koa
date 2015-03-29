@@ -11,11 +11,11 @@ app.use(function* () {
 
 function errorHandler() {
   return function* (next) {
-    // try catch all downstream errors here
+    // we catch all downstream errors here
     try {
       yield next;
     } catch (err) {
-      // set respose status
+      // set response status
       this.status = 500;
       // set response body
       this.body = 'internal server error';

@@ -1,10 +1,13 @@
-Create a koa server which parse the post data, Convert `data.name` to upper case and respond to client.
+Create a koa server which parse the post data, Convert the `name` field to
+upper case and respond to client.
+
+If you get this:
 
 ```
 POST / with { name: 'koa' }
 ```
 
-respond =>
+Respond with:
 
 ```
 KOA
@@ -26,7 +29,8 @@ To use `co-body`, you need install from npm first:
 npm install co-body
 ```
 
-`co-body` is a yieldable, accept a `Koa Context` as it's first argument. so you can use it like this:
+`co-body` is a yieldable, accept a `Koa Context` as its first argument.
+So you can use it like this:
 
 ```
 var parse = require('co-body');
