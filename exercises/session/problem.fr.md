@@ -1,16 +1,16 @@
 Dans l’exercice précédent, nous avons appris à utiliser les cookies pour
-stocker le nombre de vues de l’utilisateur.  Mais dans cet exercice-ci, nous
+stocker le nombre de visites de l’utilisateur.  Mais dans cet exercice-ci, nous
 allons tenter d’utiliser les sessions pour faire la même chose.
 
 Si vous visitez `/` :
 
 * Corps de réponse : « vu 1 fois »
-* En-tête `Set-Cookie` : `view=1`
+* En-tête `Set-Cookie` : `koa:sess=…`
 
 Revenez-y :
 
 * Corps de réponse : « vu 2 fois »
-* En-tête `Set-Cookie` : `view=2`
+* En-tête `Set-Cookie` : `koa:sess=…`
 
 ## Conseils
 

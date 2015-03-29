@@ -14,7 +14,7 @@ Content-Encoding
 ```
 
 On s’intéresse particulièrement à `type` et `length`.  Koa fournit des
-accesseurs lecteur et écrivain pour ces deux-là :
+accesseurs en lecture et en écriture pour ces deux-là :
 
 ```
 this.request.type
@@ -24,7 +24,7 @@ this.response.length
 ```
 
 Il est un peu difficile de correctement interpréter `this.request.type`.  Par
-exemple, comment savoir si la requête est textuelle ?  On aimerait éviter de
+exemple, comment savoir si la requête est de type texte ?  On aimerait éviter de
 devoir s’empêtrer dans des expressions rationnelles ou de parcourir une liste
 supposée exhaustive de tous les types MIME possibles.  C’est pourquoi Koa
 vous fournit `this.request.is(…)` :

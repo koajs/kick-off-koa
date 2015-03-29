@@ -1,17 +1,17 @@
-Créez une app qui :
+Créez une application qui :
 
-* renvoie un flux quand le client requête `/stream`
-* renvoie un contenu JSON quand le client requête `/json`
+* renvoie un flux quand le client fait une requête vers `/stream`
+* renvoie un contenu JSON quand le client fait une requête vers `/json`
 
-Lorsque `/json` est requêté, la réponse devrait être :
+Lors d’une requête vers `/json`, la réponse devrait être :
 
 ```
 { foo: 'bar' }
 ```
 
-Lorsque `/stream` est requêté, le serveur derait répondre avec le contenu du
-fichier dont le chemin sera passé dans `process.argv[3]`.  Utilisez la méthode
-noyau `fs.createReadStream(…)` :
+Lors d’une requête vers `/stream`, le serveur derait répondre avec le contenu
+du fichier dont le chemin sera passé dans `process.argv[3]`.  Utilisez la
+méthode noyau `fs.createReadStream(…)` :
 
 ```
 fs.createReadStream(process.argv[3]);

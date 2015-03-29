@@ -1,6 +1,6 @@
 Ajoutez un middleware de gestion d’erreurs à l’application Koa ci-dessous.
 
-Le middleware `errorHandler` doit attraper toutes les erreurs survenues plus bas
+Le middleware `errorHandler` doit attraper toutes les erreurs survenues plus loin
 dans la pile des middlewares, et répondre au client avec un statut `500` et un
 corps de réponse `erreur serveur interne`.
 

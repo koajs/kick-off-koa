@@ -17,9 +17,9 @@
   "exercise": {
     "HELLO_KOA": "BONJOUR KOA",
     "ROUTING": "ROUTAGE",
-    "REQUEST_BODY": "CORPS DE REQUÊTE",
-    "RESPONSE_BODY": "CORPS DE RÉPONSE",
-    "CONTENT_HEADERS": "EN-TÊTES DE CONTENU",
+    "REQUEST_BODY": "CORPS DE LA REQUÊTE",
+    "RESPONSE_BODY": "CORPS DE LA RÉPONSE",
+    "CONTENT_HEADERS": "EN-TÊTES DU CONTENU",
     "MIDDLEWARE": "MIDDLEWARE",
     "ERROR_HANDLING": "GESTION DES ERREURS",
     "COOKIE": "COOKIE",
@@ -29,23 +29,23 @@
   },
   "exercises": {
     "ROUTING": {
-      "log_format": "corps de réponse pour `%s` : %s"
+      "log_format": "corps de la réponse pour `%s` : %s"
     },
     "REQUEST_BODY": {
       "log_conversion": "conversion de `%s` en `%s`"
     },
     "RESPONSE_BODY": {
-      "log_body": "corps de réponse pour `%s` : %s",
+      "log_body": "corps de la réponse pour `%s` : %s",
       "log_ctype": "content-type renvoyé pour `%s` : %s",
       "log_encoding": "transfer-encoding renvoyé pour `%s` : %s"
     },
     "MIDDLEWARE": {
-      "log_uppercase": "le middleware `upperCase` a converti le corps de réponse en « %s »",
+      "log_uppercase": "le middleware `upperCase` a converti le corps de la réponse en « %s »",
       "log_response_time": "le middleware `responseTime` a défini l’en-tête `X-Response-Time`"
     },
     "ERROR_HANDLING": {
-      "log_body": "répond « %s » quand requêté sur `%s`",
-      "log_status": "répond avec un statut %d quand requêté sur `%s`"
+      "log_body": "répond « %s » quand une requête est faite vers `%s`",
+      "log_status": "répond avec un statut %d quand une requête est faite vers `%s`"
     },
     "COOKIE": {
       "fail.unset_cookie": "cookie.view non défini",

@@ -1,7 +1,7 @@
 Créez un serveur koa qui écoute sur un numéro de port passé en ligne de
 commande, et répond « bonjour koa » aux requêtes HTTP GET envoyées sur `/`.
 
-Cet exercice exécutera des requêtes à votre serveur et vérifiera leurs réponses.
+Cet exercice exécutera des requêtes vers votre serveur et vérifiera leurs réponses.
 
 ## Conseils
 
@@ -13,9 +13,9 @@ Pour installer koa :
 $ npm install koa
 ```
 
-Par ailleurs, vous aurez besoin de node.js en version au moins 0.11.9 pour
-exécuter des applications koa.  Utilisez par exemple nvm pour installer un
-node.js suffisant, par exemple 0.12 :
+Par ailleurs, vous aurez au minimum besoin de node.js 0.11.9 pour exécuter
+des applications koa.  Utilisez par exemple nvm pour installer une version de
+node.js suffisante, par exemple la version 0.12 :
 
 ```
 https://github.com/creationix/nvm

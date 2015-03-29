@@ -1,4 +1,4 @@
-Créez un serveur Koa qui analyse les données reçues dans le corps de requête
+Créez un serveur Koa qui analyse les données reçues dans le corps d’une requête
 POST, convertissez le champ `name` en majuscules et renvoyez-le au client.
 
 Pour la requête suivante :
@@ -15,7 +15,7 @@ KOA
 
 ## Conseils
 
-Il existe plusieurs analyseurs de corps de requête pour Koa :
+Il existe plusieurs modules d’analyse des corps de requête pour Koa :
 
 ```
 https://github.com/koajs/body-parser
@@ -23,8 +23,8 @@ https://github.com/koajs/body-parsers
 ```
 
 Toutefois, pour cet exercice, nous utiliserons simplement `co-body`, qui
-analyse basiquement le corps de requête.  Pour utiliser ce module, installez-le
-d’abord avec npm :
+réalise une analyse basique du corps des requêtes.  Pour utiliser ce module,
+installez-le d’abord avec npm :
 
 ```
 npm install co-body

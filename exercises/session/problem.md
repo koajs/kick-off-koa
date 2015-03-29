@@ -5,12 +5,12 @@ thing.
 visit `/`:
 =>
 respond body: `1 views`
-set-cookie: `view=1`
+set-cookie: `koa:sess=…`
 
 visit `/` again:
 =>
 respond body: `2 views`
-set-cookie: `view=2`
+set-cookie: `koa:sess=…`
 
 HINT
 

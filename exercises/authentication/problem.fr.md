@@ -9,7 +9,7 @@ et de déconnexion.  Nous définirons les routes suivantes :
 
 2) `/login`
   - Avec la méthode GET, affiche un formulaire de connexion.
-  - Avec la méthode POST, valide le corps de requête et tente de connecter
+  - Avec la méthode POST, valide le corps de la requête et tente de connecter
      la personne ; en cas de connexion réussie, redirige sur `/`.
 
 3) `/logout`
@@ -24,12 +24,12 @@ username = username
 password = password
 ```
 
-Toute autre tentative recevra une erreur 400.
+Toute autre valeur renverra une erreur 400.
 
 ## Conseils
 
-Commençons par créer un squelette pour cette appli simple, que vous n’aurez plus
-qu’à compléter !
+Voici un squelette prêt à l’emploi pour cette petite application.  Vous n’avez plus
+qu’à le compléter.
 
 ```
 var koa = require('koa');

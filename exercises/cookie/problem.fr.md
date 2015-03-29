@@ -1,8 +1,8 @@
-Créez une app qui utilise les cookies pour stocker le nombre de vues
-de l’utilisateur.
+Créez une application qui utilise les cookies pour stocker le nombre de visites
+d’un utilisateur.
 
 1) La clé du cookie est `view`, vous y stockerez le nombre de vues.
-2) Chaque fois que le serveur est requêté, la réponse doit être
+2) Chaque fois qu’une requête est envoyée au serveur, la réponse doit être
    « vu {time} fois »
 3) Le cookie doit être **signé**
 

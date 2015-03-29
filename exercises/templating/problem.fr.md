@@ -2,7 +2,7 @@ Créez un serveur Koa qui écoute sur le numéro de port passé en ligne de
 commande et répond aux requêtes HTTP GET sur `/` par du HTML obtenu en
 traitant un fichier de gabarit au format `ejs`.
 
-Cet exercice exécutera des requêtes à votre serveur et vérifiera leurs réponses.
+Cet exercice exécutera des requêtes vers votre serveur et vérifiera leurs réponses.
 
 ## Conseils
 
@@ -23,7 +23,7 @@ var render = views(__dirname + '/views', {
 ```
 
 Vous vous demandez peut-être où est ce répertoire `views` ?  Vous devez le
-créer dans le dossier de votre fichier d’exercice, et vous assurer qu’il
+créer dans le même dossier que votre fichier d’exercice, et vous assurer qu’il
 contient bien un fichier EJS, par exemple `user.ejs`, qui ressemble à ceci :
 
 ```
@@ -43,8 +43,8 @@ var user = {
 };
 ```
 
-Une fois tout ceci mis en place, et avec le code ci-dessous pour faire le
-*rendering* des résultats, ça devrait être un exercice facile.
+Une fois tout ceci mis en place, et avec le code ci-dessous pour restituer
+les résultats au format HTML, ça devrait être un exercice facile.
 
 ```
 this.body = yield render('user', { user: user });
