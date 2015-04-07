@@ -1,0 +1,18 @@
+{yellow}{bold}对于 {appname} 的习题有任何疑问?{/bold}{/yellow}
+
+  有一群 Koa.js 的牛人在等你，直接去：
+
+    https://github.com/koajs/koa/issues
+
+
+  添加一个 {bold}New Issue{/bold}，告诉我们有什么问题。我们一定会认真回答每一个问题！
+
+  如果你想找寻任何 koa 相关的咨询，请到 #koa 的 gitter.im 上：
+
+    https://gitter.im/koajs/koa
+
+{yellow}{bold}找到了 {appname} 的 bug 或者想贡献更多内容?{/bold}{/yellow}
+
+  {appname} 的项目地址是:
+    https://github.com/koajs/kick-off-koa/
+  发 pull request 请不要客气。
