@@ -3,17 +3,16 @@
   Une équipe d’assistants elfiques experts n’attend que l’occasion de
   vous aider à maîtriser Koa.js, allez simplement sur :
 
-    https://github.com/nodeschool/discussions/issues
+    https://github.com/koajs/koa/issues
 
   et ajoutez une {bold}Nouvelle Requête{/bold} ({italic}New Issue{/italic}) pour nous
   faire savoir ce qui vous pose problème.  Il n’y a pas de questions {italic}débiles{/italic} !
 
-  Si vous cherchez de l’aide plus globale sur Koa.js, le canal #koajs
-  sur Freenode IRC est généralement un excellent point de départ pour
-  trouver quelqu’un qui voudra bien vous aider.  Il existe aussi un
-  Google Group Koa.js :
+  Si vous cherchez de l’aide plus globale sur Koa.js, le canal #koa
+  sur gitter.im est généralement un excellent point de départ pour
+  trouver quelqu’un qui voudra bien vous aider.
 
-    https://groups.google.com/forum/#!forum/koajs
+    https://gitter.im/koajs/koa
 
 {yellow}{bold}Vous avez trouvé un bogue dans {appname} ou voulez juste contribuer ?{/bold}{/yellow}
 
