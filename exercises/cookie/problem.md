@@ -1,17 +1,17 @@
 Create an app that use cookie to store user's view times.
 
 1. cookie's key is `view`, you need store the view times in this cookie.
-2. every time request the server, respond must be `{time} views`.
-3. cookie need be `signed`
+2. every time the server is queried, the response must be `{count} views`.
+3. cookie needs to be `signed`.
 
 visit `/`:
 =>
-respond body: `1 views`
+response body: `1 views`
 set-cookie: `view=1`
 
 visit `/` again:
 =>
-respond body: `2 views`
+response body: `2 views`
 set-cookie: `view=2`
 
 HINT
