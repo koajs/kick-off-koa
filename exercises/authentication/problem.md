@@ -1,4 +1,4 @@
-In previous exercies, we learned `route`, `body-parser` and `session`. In this exercise, we will try to combine them all to create a very simple app with login and logout features. Let's define the following routes:
+In previous exercises, we learned `route`, `body-parser` and `session`. In this exercise, we will try to combine them all to create a very simple app with login and logout features. Let's define the following routes:
 
 - `/` - If the user is logged in, they should see `hello world`. Otherwise, they should see a `401` error because they aren't logged in.
 - `/login` - if the method is `GET`, a form should be returned. If the method is `POST`, it should validate the request body and attempt to login the user, if login successful redirected to `/`.
