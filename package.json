@@ -22,20 +22,20 @@
   "license": "MIT",
   "dependencies": {
     "colors-tmpl": "^1.0.0",
-    "combined-stream": "0.0.7",
+    "combined-stream": "1.0.5",
     "freeport": "^1.0.4",
     "pedding": "^1.0.0",
-    "through2": "^0.6.3",
+    "through2": "^2.0.0",
     "urllib": "^2.3.0",
     "workshopper": "^2.3.1",
     "workshopper-exercise": "^2.3.0"
   },
   "devDependencies": {
-    "co-body": "^1.1.0",
-    "co-views": "^0.3.0",
+    "co-body": "^4.0.0",
+    "co-views": "^2.1.0",
     "ejs": "^2.3.1",
-    "glob": "^4.4.1",
-    "koa": "^0.18.1",
+    "glob": "^6.0.3",
+    "koa": "^1.1.2",
     "koa-session": "^3.1.0"
   }
 }
