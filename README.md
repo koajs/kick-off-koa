@@ -37,6 +37,16 @@ If you want to play offline, install all these dependencies first:
 npm install koa koa-session co-body co-views ejs
 ```
 
+If the above method does not work on your system, there is an alternative. Assuming you already have [Node.js](https://nodejs.org/en/) installed, run:
+
+```
+git clone http://github.com/koajs/kick-off-koa
+
+npm install
+
+node kick-off-koa.js
+```
+
 Note that the exercises of kick-off are only verified under koa 1, but <strong>NOT</strong> koa 2. Meanwhile we are migrating to kao 2 and you can also take part in it.
 ## Learn More
 
