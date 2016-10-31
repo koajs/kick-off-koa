@@ -37,7 +37,7 @@ If you want to play offline, install all these dependencies first:
 npm install koa koa-session co-body co-views ejs
 ```
 
-Note that the exercises of kick-off are only verified under koa 1, but <strong>NOT</strong> koa 2. Meanwhile we are migrating to kao 2 and you can also take part in it.
+Note that the exercises of kick-off are only verified under koa 1, but <strong>NOT</strong> koa 2. Meanwhile we are migrating to koa 2 and you can also take part in it.
 ## Learn More
 
  - [workshop](https://github.com/koajs/workshop) - A workshop to learn the basics of koa, Express' spiritual successor.
