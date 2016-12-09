@@ -48,18 +48,18 @@
       "log_status": "response status is %d when requesting `%s`"
     },
     "COOKIE": {
-      "fail.unset_cookie": "cookie.view not set",
-      "fail.set_unsigned": "ctx.cookies.set should set options.signed = true",
-      "fail.get_unsigned": "ctx.cookies.get should set options.signed = true",
-      "log.first_visit": "first visit: %s",
-      "log.visit_again": "visit again: %s",
-      "log.signed": "signed cookie can not be tampered",
-      "output.one_view": "1 views"
+      "fail.unset_cookie": "cookie.view no esta definida",
+      "fail.set_unsigned": "ctx.cookies.set debería tener options.signed = true",
+      "fail.get_unsigned": "ctx.cookies.get debería tener options.signed = true",
+      "log.first_visit": "primera visits: %s",
+      "log.visit_again": "otra visita: %s",
+      "log.signed": "cookie firmada no puede ser alterada",
+      "output.one_view": "1 visita"
     },
     "SESSION": {
-      "log.first_visit": "first visit: %s",
-      "log.visit_again": "visit again: %s",
-      "log.new_user_visit": "new user visit page: %s"
+      "log.first_visit": "primera visits: %s",
+      "log.visit_again": "otra visita: %s",
+      "log.new_user_visit": "un usuario nuevo visita la página: %s"
     },
     "AUTHENTICATION": {
       "fail.no_initial_401": "GET /       : non-logged-in user should get 401 error, but got %d",
