@@ -46,7 +46,7 @@ Los manejadores (handlers) pueden ser funciones generadores anónimas o declarad
 ```
 app.use(function *() {
   // puedes asignar el cuerpo de la respuesta en un manejador así
-   this.body = 'hello';
+   this.body = 'hola';
 });
 ```
 Puedes leer más sobre las funciones generador de ECMAScript 6 aquí:
