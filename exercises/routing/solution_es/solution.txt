@@ -1,0 +1,3 @@
+`/` cuerpo de la respuesta: hola koa
+`/404` cuerpo de la respuesta: page not found
+`/500` cuerpo de la respuesta: internal server error
