@@ -44,8 +44,8 @@
       "log_response_time": "el middleware `responseTime` añade la cabecera `X-Response-Time`"
     },
     "ERROR_HANDLING": {
-      "log_body": "responds \"%s\" when requesting `%s`",
-      "log_status": "response status is %d when requesting `%s`"
+      "log_body": "responde \"%s\" al pedir `%s`",
+      "log_status": "el status de la respuesta es %d al pedir `%s`"
     },
     "COOKIE": {
       "fail.unset_cookie": "cookie.view no esta definida",
