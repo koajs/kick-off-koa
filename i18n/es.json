@@ -51,13 +51,13 @@
       "fail.unset_cookie": "cookie.view no esta definida",
       "fail.set_unsigned": "ctx.cookies.set debería tener options.signed = true",
       "fail.get_unsigned": "ctx.cookies.get debería tener options.signed = true",
-      "log.first_visit": "primera visits: %s",
+      "log.first_visit": "primera visita: %s",
       "log.visit_again": "otra visita: %s",
       "log.signed": "cookie firmada no puede ser alterada",
-      "output.one_view": "1 visita"
+      "output.one_view": "1 views"
     },
     "SESSION": {
-      "log.first_visit": "primera visits: %s",
+      "log.first_visit": "primera visita: %s",
       "log.visit_again": "otra visita: %s",
       "log.new_user_visit": "un usuario nuevo visita la página: %s"
     },
