@@ -32,7 +32,7 @@
       "log_format": "respuesta para `%s`: %s"
     },
     "REQUEST_BODY": {
-      "log_conversion": "convertir `%s` a `%s`"
+      "log_conversion": "convierte `%s` a `%s`"
     },
     "RESPONSE_BODY": {
       "log_body": "cuerpo de la respuesta para `%s`: %s",
