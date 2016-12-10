@@ -29,7 +29,7 @@
   },
   "exercises": {
     "ROUTING": {
-      "log_format": "cuerpo de la respuesta para `%s`: %s"
+      "log_format": "respuesta para `%s`: %s"
     },
     "REQUEST_BODY": {
       "log_conversion": "convertir `%s` a `%s`"
