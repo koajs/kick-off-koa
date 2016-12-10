@@ -40,8 +40,8 @@
       "log_encoding": "`%s` responde transfer-encoding: %s"
     },
     "MIDDLEWARE": {
-      "log_uppercase": "`upperCase` middleware convert response body to \"%s\"",
-      "log_response_time": "`responseTime` middleware set `X-Response-Time` header"
+      "log_uppercase": "el middleware `upperCase` convierte el cuerpo de la respuesta a \"%s\"",
+      "log_response_time": "el middleware `responseTime` añade la cabecera `X-Response-Time`"
     },
     "ERROR_HANDLING": {
       "log_body": "responds \"%s\" when requesting `%s`",

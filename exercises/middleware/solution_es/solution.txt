@@ -1,0 +1,2 @@
+el middleware `upperCase` convierte el cuerpo de la respuesta a "HELLO KOA"
+el middleware `responseTime` añade la cabecera `X-Response-Time`
