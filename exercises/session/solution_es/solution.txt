@@ -1,0 +1,3 @@
+primera visita: 1 views
+otra visita: 2 views
+un usuario nuevo visita la página: 1 views
