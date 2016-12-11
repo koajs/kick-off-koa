@@ -62,16 +62,16 @@
       "log.new_user_visit": "un usuario nuevo visita la página: %s"
     },
     "AUTHENTICATION": {
-      "fail.no_initial_401": "GET /       : non-logged-in user should get 401 error, but got %d",
-      "fail.no_auth_check": "POST /login : incorrect username or password must return 400 error",
+      "fail.no_initial_401": "GET /       : usuario no logueado debería recibir error 401, pero recibió %d",
+      "fail.no_auth_check": "POST /login : usuario o contraseña incorrecta debe recibir un error 400",
       "fail.no_login_redirect": "POST /login : user should be redirected to `/`",
       "fail.no_logout_redirect": "GET /logout : user should be redirected to `/login`",
       "fail.no_final_401": "GET /       : logged-out user should get 401 error",
-      "log.initial_401": "GET /       : non-logged-in user get 401 error",
-      "log.auth_check": "POST /login : 400 error when incorrect username or password",
-      "log.login_redirect": "POST /login : login successful",
-      "log.logout_redirect": "GET /logout : user is redirected to `/login`",
-      "log.final_401": "GET /       : logged-out user get 401 error"
+      "log.initial_401": "GET /       : usuario no logueado recibe error 401",
+      "log.auth_check": "POST /login : error 400 cuando el usuario o la contraseña es incorrecto",
+      "log.login_redirect": "POST /login : login realizado con éxito",
+      "log.logout_redirect": "GET /logout : el usuario es redirigido a `/login`",
+      "log.final_401": "GET /       : usuario deslogueado user recibe error 401"
     }
   }
 }
