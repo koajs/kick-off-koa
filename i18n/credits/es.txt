@@ -1,0 +1,4 @@
+{yellow}{bold}kick-off-koa ha sido posible gracias a estas personas:{/bold}{/yellow}
+
+{bold}Nombre                    Usuario de GitHub{/bold}
+-----------------------------------------
