@@ -4,7 +4,9 @@
   "description": "An intro to koa via a set of self-guided workshops",
   "main": "kick-off-koa.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "kick-off-koa": "kick-off-koa.js"
@@ -29,7 +31,8 @@
     "through2": "^0.6.3",
     "urllib": "^2.7.0",
     "workshopper": "^2.3.1",
-    "workshopper-exercise": "^2.3.0"
+    "workshopper-exercise": "^2.3.0",
+    "snyk": "^1.25.0"
   },
   "devDependencies": {
     "co-body": "^1.1.0",
@@ -38,5 +41,6 @@
     "glob": "^4.4.1",
     "koa": "^0.18.1",
     "koa-session": "^3.1.0"
-  }
+  },
+  "snyk": true
 }
