@@ -4,7 +4,7 @@ var app = koa();
 
 app.use(function* () {
   this.body = this.request.is('json')
-    ? { message: 'salut !' }
+    ? { message: 'hi!' }
     : 'ok';
 });
 
