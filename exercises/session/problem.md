@@ -23,16 +23,16 @@ npm install koa-session
 `koa-session` is based on signed cookies, so we must set `app.keys`.
 
 ```
-var koa = require('koa');
-var session = require('koa-session');
+const Koa = require('koa');
+const session = require('koa-session');
 
-var app = koa();
+const app = new Koa();
 app.keys = ['secret', 'keys'];
 
 app.use(session(app));
 ```
 
-Then you can use `this.session` in koa handlers.
+Then you can use `ctx.session` in koa handlers.
 
 READ MORE
 

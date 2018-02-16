@@ -33,8 +33,8 @@ npm install co-body
 So you can use it like this:
 
 ```
-var parse = require('co-body');
+const parse = require('co-body');
 
 // in Koa handler
-var body = yield parse(this);
+const body = await parse(ctx);
 ```

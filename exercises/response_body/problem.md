@@ -22,8 +22,8 @@ So far, we've only used strings as bodies. Koa supports the following types of b
 - JSON Objects
 
 ```
-app.use(function* (next) {
-  this.body = {
+app.use(async (ctx, next) => {
+  ctx.body = {
     message: 'this will be sent as a JSON response!'
   };
 })
@@ -32,10 +32,10 @@ app.use(function* (next) {
 When setting a stream as a body, Koa will automatically add error handlers so you don't have to worry about error handling.
 
 ```
-var fs = require('fs');
+const fs = require('fs');
 
-app.use(function* (next) {
-  this.body = fs.createReadStream('some_file.txt');
+app.use(async (ctx, next) => {
+  ctx.body = fs.createReadStream('some_file.txt');
   // koa will automatically handle errors and leaks
 })
 ```

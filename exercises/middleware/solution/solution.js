@@ -1,31 +1,31 @@
-var koa = require('koa');
+const Koa = require('koa');
 
-var app = koa();
+const app = new Koa();
 
 app.use(responseTime());
 app.use(upperCase());
 
-app.use(function* () {
+app.use(async ctx => {
   // step 3: respond `hello koa`
-  this.body = 'hello koa';
+  ctx.body = 'hello koa';
 });
 
 function responseTime() {
-  return function* (next) {
+  return async (ctx, next) => {
     // step 1: record start time
-    var start = new Date;
-    yield next;
+    const start = new Date;
+    await next();
     // step 5: set X-Response-Time head
-    this.set('X-Response-Time', new Date - start);
+    ctx.set('X-Response-Time', new Date - start);
   };
 }
 
 function upperCase() {
-  return function* (next) {
+  return async (ctx, next) => {
     // step 2: do nothing here
-    yield next;
-    // step 4: convert this.body to upper case
-    this.body = this.body.toUpperCase();
+    await next();
+    // step 4: convert ctx.body to upper case
+    ctx.body = ctx.body.toUpperCase();
   };
 }
 

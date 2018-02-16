@@ -13,9 +13,9 @@ npm install co-views ejs
 Now, setup views:
 
 ```
-var views = require('co-views');
+const views = require('co-views');
 
-var render = views(__dirname + '/views', {
+const render = views(__dirname + '/views', {
   ext: 'ejs'
 });
 ```
@@ -29,7 +29,7 @@ You might be wondering where is the `views` dir, that must be created by you and
 Now that must give you a clue that it requires `user` object that might look like:
 
 ```
-var user = {
+const user = {
   name: {
     first: 'Tobi',
     last: 'Holowaychuk'
@@ -42,7 +42,7 @@ var user = {
 Having all this in placing and the below code to render the results, you can easily crack this.
 
 ```
-this.body = yield render('user', {user: user});
+ctx.body = await render('user', {user: user});
 ```
 
 Good luck!

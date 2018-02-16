@@ -1,9 +1,9 @@
-var koa = require('koa');
+const Koa = require('koa');
 
-var app = koa();
+const app = new Koa();
 
-app.use(function* () {
-  this.body = 'hello koa';
+app.use(async ctx => {
+  ctx.body = 'hello koa';
 });
 
 app.listen(process.argv[2]);
