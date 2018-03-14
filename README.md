@@ -27,9 +27,10 @@ npm install -g kick-off-koa
 
 After `npm install -g kick-off-koa`, Run `kick-off-koa` command.
 
-To use `kick-off-koa`, you must be running node 0.11.13 or higher for generator and promise support.
+To use `kick-off-koa`, you should be running node 7.6 or higher for async/await support.
+If you should use versions of node < 7.6, it's recommend using babel's require hook.
 You can check [nvm](https://github.com/creationix/nvm) or [n](https://github.com/visionmedia/n) to
-install node 0.11.13+.
+install node 7.6+.
 
 If you want to play offline, install all these dependencies first:
 
@@ -37,7 +38,7 @@ If you want to play offline, install all these dependencies first:
 npm install koa koa-session co-body co-views ejs
 ```
 
-Note that the exercises of kick-off are only verified under koa 1, but <strong>NOT</strong> koa 2. Meanwhile we are migrating to koa 2 and you can also take part in it.
+Now only english version was migrated to koa 2 but another is not. Meanwhile we are migrating to koa 2 and you can also take part in it.
 ## Learn More
 
  - [workshop](https://github.com/koajs/workshop) - A workshop to learn the basics of koa, Express' spiritual successor.
