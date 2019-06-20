@@ -1,6 +1,6 @@
-Create an app that use cookie to store user's view times.
+Create an app that uses cookies to store the times a user has viewed a route.
 
-1. cookie's key is `view`, you need store the view times in this cookie.
+1. cookie's key is `view`, you need to store the number of views in this cookie.
 2. every time the server is queried, the response must be `{count} views`.
 3. cookie needs to be `signed`.
 
