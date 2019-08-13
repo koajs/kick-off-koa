@@ -41,6 +41,6 @@ Don't forget to set `options.signed` in `get` and `set` to make sure the cookie 
 And to use signed cookies, you need set `app.keys`:
 
 ```
-var app = koa();
+const app = new Koa();
 app.keys = ['secret', 'keys'];
 ```

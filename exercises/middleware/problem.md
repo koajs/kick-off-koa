@@ -4,30 +4,30 @@ Complete the Koa application below, finish two middlewares:
 - upperCase: convert response body to upper case.
 
 ```
-var koa = require('koa');
+const Koa = require('koa');
 
-var app = koa();
+const app = new Koa();
 
 app.use(responseTime());
 app.use(upperCase());
 
-app.use(function* () {
-  this.body = 'hello koa';
+app.use(async ctx => {
+  ctx.body = 'hello koa';
 });
 
 function responseTime() {
-  return function* (next) {
+  return async (ctx, next) => {
     // record start time
-    yield next;
+    await next();
     // set X-Response-Time head
   };
 }
 
 function upperCase() {
-  return function* (next) {
+  return async (ctx, next) => {
     // do nothing
-    yield next;
-    // convert this.body to upper case
+    await next();
+    // convert ctx.body to upper case
   };
 }
 
@@ -40,19 +40,20 @@ HINT
 In Koa, all middleware are essentially decorators for all following middleware:
 
 ```
-app.use(function* decorator(function (subapp) {
-  // do something before subapp executes
-  yield* subapp;
-  // do something after subapp executes
-}));
+app.use(async (ctx, next) => {
+  // do something before next middleware executes
+  await next();
+  // do something after next middleware executes
+});
 
-app.use(function* subapp(next) {
-  this.response.body = 'hello world';
+// next middleware
+app.use(async (ctx, next) => {
+  ctx.body = 'hello world';
 });
 ```
 
-In koa middlewares, use `this.set(name, val)` to set a response header.
-And change response body by reassign `this.body`.
+In koa middlewares, use `ctx.set(name, val)` to set a response header.
+And change response body by reassign `ctx.body`.
 
 READ MORE
 

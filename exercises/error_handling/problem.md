@@ -3,19 +3,19 @@ The `errorHandler` middlware should catch all the downstream errors,
 then responds to the client with `internal server error` and status `500`.
 
 ```
-var koa = require('koa');
+const Koa = require('koa');
 
-var app = koa();
+const app = new Koa();
 
 app.use(errorHandler());
 
-app.use(function* () {
-  if (this.path === '/error') throw new Error('ooops');
-  this.body = 'OK';
+app.use(async ctx => {
+  if (ctx.path === '/error') throw new Error('ooops');
+  ctx.body = 'OK';
 });
 
 function errorHandler() {
-  return function* (next) {
+  return async (ctx, next) => {
     // try catch all downstream errors here
   };
 }
@@ -32,7 +32,7 @@ In Koa, error handling is done using `try/catch` (except with event emitters). Y
 You can set the response status by:
 
 ```
-this.status = 404;
+ctx.status = 404;
 ```
 
 Each Koa app is an EventEmitter instance. All errors uncaught by any middleware are sent to `app.on('error', function (err, context) {})`. This is useful for logging. However, if you create your own error handler (i.e. catching it), you will have to manually emit these events yourself.

@@ -9,10 +9,10 @@ In all these exercises, we need koa.
 To install koa:
 
 ```
-npm install koa
+$ npm install koa
 ```
 
-Also we need node 0.11.9+ to run the koa applications, you can use nvm to install node 0.11.9 or higher (e.g. 0.12):
+Also koa requires node v7.6.0 or higher for ES2015 and async function support. you can use nvm to install it:
 
 ```
 https://github.com/creationix/nvm
@@ -27,8 +27,8 @@ https://github.com/hakobera/nvmw
 Create a server that listens on a given port number with the following code:
 
 ```
-var koa = require('koa');
-var app = koa();
+const Koa = require('koa');
+const app = new Koa();
 
 // handlers here
 // app.use(handlers);
@@ -39,31 +39,25 @@ app.listen(port);
 You can get the port by
 
 ```
-var port = process.argv[2];
+const port = process.argv[2];
 ```
 
-Handlers can be anonymous generate functions or separately declared (just like in javascript :P):
+Handlers can be anonymous async functions or separately declared (just like in javascript :P):
 
 ```
-app.use(function *() {
+app.use(async ctx => {
   // you can set the response body in handler like this
-  this.body = 'hello';
+  ctx.body = 'hello';
 });
 ```
 
-You can read more about ECMAScript 6 generator functions here:
+You can read more about ECMAScript 6 async functions here:
 
 ```
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 ```
 
-Or walk through the “Learn Generators” NodeSchool workshop:
-
-```
-https://github.com/isRuslan/learn-generators
-```
-
-A Koa Context(`this` in middlewares) encapsulates node's `request` and `response` objects into a single object which provides many helpful methods for writing web applications and APIs. To learn more about Koa Context, please check the Koa website:
+A Koa Context(`ctx` parameter of async function) encapsulates node's `request` and `response` objects into a single object which provides many helpful methods for writing web applications and APIs. To learn more about Koa Context, please check the Koa website:
 
 ```
 http://koajs.com

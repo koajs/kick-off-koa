@@ -1,9 +1,9 @@
-var koa = require('koa');
+const Koa = require('koa');
 
-var app = koa();
+const app = new Koa();
 
-app.use(function* () {
-  this.body = this.request.is('json')
+app.use(async ctx => {
+  ctx.body = ctx.request.is('json')
     ? { message: 'hi!' }
     : 'ok';
 });

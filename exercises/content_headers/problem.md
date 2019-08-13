@@ -13,20 +13,20 @@ Content-Encoding
 Among many others. We're particularly interested in `type` and `length`. Koa has getters/setters for type and length:
 
 ```
-this.request.type
-this.request.length
-this.response.type
-this.response.length
+ctx.request.type
+ctx.request.length
+ctx.response.type
+ctx.response.length
 ```
 
-Inferring `this.request.type` is a little difficult. For example, how do you know if the request is text? You don't want to use a regular expression or try all the possible mime types. Thus, Koa has `this.request.is()` for you:
+Inferring `ctx.request.type` is a little difficult. For example, how do you know if the request is text? You don't want to use a regular expression or try all the possible mime types. Thus, Koa has `ctx.request.is()` for you:
 
 ```
-this.request.is('image/*') // => image/png
-this.request.is('text') // => text or false
+ctx.request.is('image/*') // => image/png
+ctx.request.is('text') // => text or false
 ```
 
-Also Koa has `this.response.is()`, the same as `this.request.is()` but for the response.
+Also Koa has `ctx.response.is()`, the same as `ctx.request.is()` but for the response.
 
 Learn more about request.is().
 

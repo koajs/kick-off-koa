@@ -1,29 +1,29 @@
-var koa = require('koa');
+const Koa = require('koa');
 
-var app = koa();
+const app = new Koa();
 
-app.use(function* (next) {
-  if (this.path !== '/') {
-    return yield next;
+app.use(async (ctx, next) => {
+  if (ctx.path !== '/') {
+    return await next();
   }
 
-  this.body = 'hello koa';
+  ctx.body = 'hello koa';
 });
 
-app.use(function* (next) {
-  if (this.path !== '/404') {
-    return yield next;
+app.use(async (ctx, next) => {
+  if (ctx.path !== '/404') {
+    return await next();
   }
 
-  this.body = 'page not found';
+  ctx.body = 'page not found';
 });
 
-app.use(function* (next) {
-  if (this.path !== '/500') {
-    return yield next;
+app.use(async (ctx, next) => {
+  if (ctx.path !== '/500') {
+    return await next();
   }
 
-  this.body = 'internal server error';
+  ctx.body = 'internal server error';
 });
 
 app.listen(process.argv[2]);

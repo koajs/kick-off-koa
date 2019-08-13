@@ -1,22 +1,22 @@
-var koa = require('koa');
-var fs = require('fs');
+const Koa = require('koa');
+const fs = require('fs');
 
-var app = koa();
+const app = new Koa();
 
-app.use(function *(next) {
-  if (this.path !== '/json') {
-    return yield next;
+app.use(async (ctx, next) => {
+  if (ctx.path !== '/json') {
+    return await next();
   }
 
-  this.body = { foo: 'bar' };
+  ctx.body = { foo: 'bar' };
 });
 
-app.use(function *(next) {
-  if (this.path !== '/stream') {
-    return yield next;
+app.use(async (ctx, next) => {
+  if (ctx.path !== '/stream') {
+    return await next();
   }
 
-  this.body = fs.createReadStream(process.argv[3]);
+  ctx.body = fs.createReadStream(process.argv[3]);
 });
 
 app.listen(process.argv[2]);
