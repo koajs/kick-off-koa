@@ -1,0 +1,6 @@
+GET /       : usuario no logueado recibe error 401
+POST /login : error 400 cuando el usuario o la contraseña es incorrecto
+POST /login : login realizado con éxito
+GET /       : hola mundo
+GET /logout : el usuario es redirigido a `/login`
+GET /       : usuario deslogueado user recibe error 401

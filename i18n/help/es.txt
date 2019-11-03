@@ -1,0 +1,21 @@
+{yellow}{bold}¿Estas teniendo problemas con los ejercicios de {appname}?{/bold}{/yellow}
+
+  Un equipo de elfos ayudantes expertos espera ansiosamente poder ayudarte
+  a dominar koa.js, basta con ir a:
+
+    https://github.com/nodeschool/discussions/issues
+
+  y añadir un {bold}New Issue{/bold} y decirnos con que estas teniendo problemas.
+  ¡No hay preguntas {italic}tontas{/italic}!
+
+  Si buscas ayuda en general con Koa.js, el canal #koajs
+  en Freenode IRC suele ser un gran lugar para encontrar a alguien
+  dispuesto a ayudarte. También hay un Google Group de Koa.js:
+
+    https://groups.google.com/forum/#!forum/koajs
+
+{yellow}{bold}¿Has encontrado un bug(fallo) en {appname} o quieres contribuir?{/bold}{/yellow}
+
+  El repositorio oficial de {appname} es:
+    https://github.com/koajs/kick-off-koa/
+  Siéntete libre de reporta un bug o (preferiblemente) un pull request.

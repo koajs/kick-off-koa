@@ -2,3 +2,4 @@ dead-horse                @dead-horse
 hemanth.hm                @hemanth
 Yoshua Wuyts              @yoshuawuyts
 Christophe Porteneuve     @tdd
+Alvaro Martinez de Miguel @demipel8

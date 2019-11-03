@@ -12,7 +12,7 @@ function fpath (f) {
 Workshopper({
     name : name,
     appDir : __dirname,
-    languages : ['en', 'fr'],
+    languages : ['en', 'fr', 'es'],
     helpFile : fpath('./i18n/help/{lang}.txt'),
     menuItems : [{
         name : 'credits',
