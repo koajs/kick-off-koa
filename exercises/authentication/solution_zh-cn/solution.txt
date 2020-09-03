@@ -1,0 +1,6 @@
+GET /       : non-logged-in user get 401 error
+POST /login : 400 error when incorrect username or password
+POST /login : login successful
+GET /       : hello world
+GET /logout : user is redirected to `/login`
+GET /       : logged-out user get 401 error
