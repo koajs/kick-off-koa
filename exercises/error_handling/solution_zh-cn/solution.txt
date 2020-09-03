@@ -1,4 +1,4 @@
-当请求`/`时,响应"OK"
-当请求`/`时,响应状态码是200
-当请求`/error`时,响应"internal server error"
-当请求`/error`时,响应状态码为500
+responds "OK" when requesting `/`
+response status is 200 when requesting `/`
+responds "internal server error" when requesting `/error`
+response status is 500 when requesting `/error`

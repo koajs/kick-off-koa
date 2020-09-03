@@ -1,2 +1,2 @@
-转换 `hello` 为 `HELLO`
-转换 `koa` 为 `KOA`
+convert `hello` to `HELLO`
+convert `koa` to `KOA`

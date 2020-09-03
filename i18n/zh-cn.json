@@ -39,7 +39,7 @@
       "log_ctype": "`%s` respond content-type: %s",
       "log_encoding": "`%s` respond transfer-encoding: %s"
     },
-    "中间价": {
+    "MIDDLEWARE": {
       "log_uppercase": "`upperCase` middleware convert response body to \"%s\"",
       "log_response_time": "`responseTime` middleware set `X-Response-Time` header"
     },
