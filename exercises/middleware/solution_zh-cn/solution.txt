@@ -1,0 +1,2 @@
+`upperCase` middleware convert response body to "HELLO KOA"
+`responseTime` middleware set `X-Response-Time` header
