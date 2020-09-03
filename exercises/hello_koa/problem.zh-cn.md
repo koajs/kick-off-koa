@@ -46,7 +46,7 @@ const port = process.argv[2];
 
 ```
 app.use(async ctx => {
-  // 你可以像这样设置response body
+  // 可以像这样设置response body
   ctx.body = 'hello';
 });
 ```
