@@ -1,0 +1,5 @@
+`/json` respond body: {"foo":"bar"}
+`/json` respond content-type: application/json; charset=utf-8
+`/stream` respond body: Setting a stream as a body.
+`/stream` respond content-type: application/octet-stream
+`/stream` respond transfer-encoding: chunked
