@@ -32,7 +32,7 @@
     "urllib": "^2.7.0",
     "workshopper": "^2.3.1",
     "workshopper-exercise": "^2.3.0",
-    "snyk": "^1.25.0"
+    "snyk": "^1.231.0"
   },
   "devDependencies": {
     "co-body": "^5.1.1",

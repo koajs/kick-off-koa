@@ -10,12 +10,12 @@ function fpath (f) {
 }
 
 Workshopper({
-    name : name,
-    appDir : __dirname,
-    languages : ['en', 'fr'],
-    helpFile : fpath('./i18n/help/{lang}.txt'),
-    menuItems : [{
-        name : 'credits',
-        handler : credits
-    }]
+  name : name,
+  appDir : __dirname,
+  languages : ['en', 'fr', 'zh-cn'],
+  helpFile : fpath('./i18n/help/{lang}.txt'),
+  menuItems : [{
+    name : 'credits',
+    handler : credits
+  }]
 });

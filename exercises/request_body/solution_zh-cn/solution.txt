@@ -1,0 +1,2 @@
+convert `hello` to `HELLO`
+convert `koa` to `KOA`

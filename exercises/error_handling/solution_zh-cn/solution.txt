@@ -1,0 +1,4 @@
+responds "OK" when requesting `/`
+response status is 200 when requesting `/`
+responds "internal server error" when requesting `/error`
+response status is 500 when requesting `/error`
