@@ -1,0 +1,3 @@
+`/` respond body: hello koa
+`/404` respond body: page not found
+`/500` respond body: internal server error
