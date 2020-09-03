@@ -1,4 +1,4 @@
-在命令行创建一个监听端口的 koa 服务器,当 HTTP GET 请求 / 时,回复'hello koa'
+使用命令行创建一个监听端口的 koa 服务器,当 HTTP GET 请求 / 时,回复'hello koa'
 
 workShop 会执行对应的请求并且验证输出结果
 
