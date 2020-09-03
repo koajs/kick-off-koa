@@ -1,0 +1,18 @@
+{yellow}{bold}对 {appname} 有疑问?{/bold}{/yellow}
+
+  一群大牛可以帮助您掌握Koa.js,只需要去:
+
+    https://github.com/nodeschool/discussions/issues
+
+  添加{bold}New Issue{/bold} ,让我们知道您遇到了什么问题。每个问题都值得{italic}被重视{/italic}!
+
+  如果你在寻找koa.js的帮助, Freenode IRC上的#koa.js专题通常会有人愿意帮助你. 
+  还有 Koa.js的Google Group:
+
+    https://groups.google.com/forum/#!forum/koajs
+
+{yellow}{bold}如果找到关于 {appname} 的BUG 或者 想参与项目的建设?{/bold}{/yellow}
+
+  {appname} 的官方项目地址:
+    https://github.com/koajs/kick-off-koa/
+  请随意提交BUG报告或(最好)pull请求
