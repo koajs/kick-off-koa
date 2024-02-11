@@ -29,7 +29,7 @@
     "pedding": "^1.0.0",
     "strip-ansi": "^3.0.1",
     "through2": "^0.6.3",
-    "urllib": "^2.7.0",
+    "urllib": "^3.0.0",
     "workshopper": "^2.3.1",
     "workshopper-exercise": "^2.3.0",
     "snyk": "^1.25.0"
